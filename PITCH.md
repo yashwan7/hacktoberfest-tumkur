@@ -2,7 +2,7 @@
 
 ## 0:00–0:35 — Problem
 
-“Contributor documentation is accurate but distributed across long pages. A new contributor needs a setup command, a testing command, a PR rule, or a community-safety answer immediately. A generic LLM can sound confident while making up a command. We built an open-source contributor guide that answers from Gradio and REsq Mesh documentation, shows the evidence, and refuses unrelated questions.”
+“Contributor documentation is accurate but distributed across long pages. A new contributor needs a setup command, a testing command, a PR rule, or a community-safety answer immediately. A generic LLM can sound confident while making up a command. We built an open-source contributor-guide prototype that retrieves Gradio and REsq Mesh evidence and attempts grounded Gemma answers. We will show a working case alongside measured output failures.”
 
 ## 0:35–1:45 — Live Q&A with citations and passages
 
@@ -13,7 +13,7 @@ Expected demo flow:
 1. The answer says to run `bash scripts/run_backend_tests.sh` on macOS/Linux.
 2. The source citation points to `CONTRIBUTING.md`.
 3. The passages panel shows the testing section and its score.
-4. Point out the latency field and that the answer is inspectable rather than a black-box paragraph.
+4. Point out latency and evidence. If the response is an SDK-object dump, explicitly demonstrate that recorded failure and inspect the retrieved passage; do not call it a successful answer.
 
 Then ask: **“Against which branch should a Gradio PR be submitted?”** The grounded answer is `main`, ideally addressing an open issue; the citation should remain `CONTRIBUTING.md`.
 
@@ -36,34 +36,35 @@ Use the guide to walk through this newcomer checklist:
 
 ## 2:55–3:35 — Evaluation numbers and RAG vs no-RAG
 
-Open `eval/results/` and explain the measurement split:
+“We froze 25 questions: 20 grounded answers and five outside scope. With judge v2, RAG scored 4 correct, 1 partial and 15 wrong: 20.0% confirmed accuracy. No-RAG scored 0 correct out of 20. Both refused 5/5 and 5/5 outside-scope cases respectively. Average answer latency was 10.33s with RAG and 9.66s without.”
 
-- correctness is judged by Gemma as `CORRECT`, `PARTIAL`, or `WRONG`;
-- citation hit checks whether the expected source file is returned;
-- refusal accuracy is scored on the five out-of-scope cases;
-- average latency is taken from the answer contract.
+Open rag_vs_norag.md and show its three actual side-by-side answers. Explain that no-RAG retains the evidence-only prompt and falsely refuses all 20 answerable questions; it is not an unrestricted-model comparison. No confident factual hallucinations were observed in that arm.
 
-The committed reports currently show `n/a` quality values because the production `rag.py`, `data/`, and `GOOGLE_API_KEY` were not available in this checkout. This is intentional honesty, not a tuned benchmark. After Laptop A pushes, run `python eval/run_eval.py --run-name baseline` and then `python eval/rag_vs_norag.py` to populate the real numbers. The side-by-side report is designed to show where no-RAG answers become confidently wrong and where retrieved evidence prevents that.
+“The original default run also exposed an outage: only 13/20 judgments completed. We preserved it, including 5 correct answers and the 68.42s outage-inflated mean. Its judge protocol differs from this paired run.”
 
 ## 3:35–4:10 — Experiments and failure cases
 
-Show `experiments.md`. It changes one variable at a time around `chunk_size=800`, `top_k=4`, `hybrid=true`, and `threshold=0.30`; it does not spend quota on a full grid. The planned charts are accuracy versus chunk size and accuracy versus `top_k`.
+Show the measured chunk-size and top-k charts. “Eight OFAT configurations isolate chunk size, retrieval breadth, hybrid matching and threshold. The largest observed confirmed-correct rate was 40.0% (chunk_size=1200); this small, unreplicated sweep does not prove an optimum.”
 
-Show `failure_analysis.md`. Wrong or partial answers are categorized as retrieval miss, chunk split, wrong synthesis, or bad refusal threshold, each with a proposed fix. That turns a bad answer into an engineering action instead of hiding it.
+“Failures matter more than a flattering score: 15/20 paired RAG outputs were SDK dumps marked MAX_TOKENS. File hit was 100.0%, yet answer accuracy was only 20.0%. Fix final-response extraction and generation budgeting first.”
+
+Open failure_analysis.md. Show counts by run and every classified wrong/partial, refusal and explicit service/judge failure. Separate outage handling from retrieval calibration. Do not read any historical stub values as model measurements.
 
 ## 4:10–5:00 — Future work and close
 
-“Next we would add heading-aware chunking, calibrated refusal thresholds, answer-level citation spans, a larger stratified test set, and the optional Gemma 26B versus 31B comparison. The core promise is simple: useful contributor guidance with evidence visible and scope boundaries explicit.”
+“First repair response extraction, output budgeting and bounded network timeouts. Then rerun this unchanged set, add an independent human-reviewed holdout, test real follow-up conversations, and separate the no-RAG refusal instruction from a true unrestricted-model baseline. After that, add heading-aware chunks, claim-level citations and calibrated abstention.”
+
+Mention the 26B/31B comparison only if model_comparison.md contains completed live measurements. Otherwise say it was deferred for the hackathon time budget. Finish with the cited backend-test command and its supporting passage; if generation fails live, show the recorded failure rather than hiding it.
 
 ## Ten likely judge questions
 
-1. **Why RAG instead of prompting Gemma with a long README?** — Retrieval reduces irrelevant context, keeps prompts within a predictable budget, and lets us show exactly which passages supported an answer.
-2. **How do you prevent hallucinations?** — We gate on retrieval evidence, instruct the model to stay within passages, return citations/passages, and score both correctness and citation hit rather than trusting fluent text.
-3. **How do you test correctness?** — Twenty short answers are grounded in the two requested repositories, then Gemma judges each candidate as CORRECT, PARTIAL, or WRONG with a reason; raw rows are saved.
-4. **Why include out-of-scope questions?** — A contributor assistant that answers unrelated questions confidently is unsafe and distracting, so five refusal cases measure that boundary directly.
-5. **Why use hybrid retrieval?** — Exact commands and filenames benefit from lexical matching; paraphrased questions benefit from embeddings. The experiment runner measures whether the combination helps here.
-6. **Why these chunk sizes and `top_k` values?** — They bracket the default 800-character/4-passage choice with smaller, larger, narrower, and broader context while avoiding a quota-heavy full grid.
-7. **What happens when the model or API is unavailable?** — The evaluator records an explicit unavailable result; the application should preserve the refusal/fallback contract rather than inventing an answer, and `GOOGLE_API_KEY` is read only from the environment.
-8. **What is REsq Mesh doing in a contributor guide?** — It is the second project document required by the problem and gives the benchmark cross-project questions about architecture, offline operation, and verification.
-9. **What is the biggest current limitation?** — The committed integration checkout did not yet contain Laptop A's production RAG module, documents, or credentials, so no production quality number is claimed; the rerun commands are ready.
-10. **What would you build next?** — Calibrated refusal, structure-aware chunking, sentence-level citations, a larger maintained test set, and a measured 26B/31B Gemma latency-quality comparison.
+1. **What did RAG achieve?** — In the paired run: 4/20 correct (20.0%), 1 partial, 15 wrong, with 20/20 judged. We report the failures too.
+2. **Did you observe no-RAG hallucinations?** — No confident wrong factual examples in this implemented arm; it falsely refused 20/20 in-scope questions because its evidence-only prompt remained active.
+3. **Why can citation hit be high with poor answers?** — It checks returned source-file membership. 100.0% citation hit coexisted with 15/20 SDK dumps, so it does not prove answer quality.
+4. **How were ground truths verified?** — Against the actual Gradio and exact yashwan7/REsq-mesh docs in data/. Only source-path mismatches were corrected before measurement; no questions were tuned to observed outputs.
+5. **How reliable is the judge?** — Imperfect. The same-family judge can reward facts embedded in malformed output. Raw responses, reasons, coverage and protocol labels are preserved for human review.
+6. **Which parameters won?** — chunk_size=1200 reached the highest observed rate, 40.0%. With 20 answerable cases and no repeats or holdout, we do not claim optimality.
+7. **Why OFAT rather than a grid?** — Eight configurations bracket defaults and reduce API use. They do not measure interactions. The audited default arm can be reused rather than called twice.
+8. **What caused the biggest failures?** — MAX_TOKENS generations were returned as SDK objects; a separate network outage inflated the original baseline. These require generation/error-handling fixes, not altered test questions.
+9. **Is 68 seconds normal latency?** — No. The original baseline mean includes a 1488.34-second outage-affected call; its median was 12.52s. The paired RAG mean was 10.33s.
+10. **What would you build next?** — Repair final-output parsing and timeouts, add independent/human evaluation and an untouched holdout, correct the no-RAG control, then test conversation memory, chunk structure and citation entailment.

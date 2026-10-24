@@ -1,0 +1,50 @@
+[
+  {
+    "config": "default",
+    "same_context": 20,
+    "changed_answer_same_context": 0,
+    "changed_grade_same_context": 0
+  },
+  {
+    "config": "chunk_size=400",
+    "same_context": 0,
+    "changed_answer_same_context": 0,
+    "changed_grade_same_context": 0
+  },
+  {
+    "config": "chunk_size=1200",
+    "same_context": 0,
+    "changed_answer_same_context": 0,
+    "changed_grade_same_context": 0
+  },
+  {
+    "config": "top_k=2",
+    "same_context": 0,
+    "changed_answer_same_context": 0,
+    "changed_grade_same_context": 0
+  },
+  {
+    "config": "top_k=6",
+    "same_context": 0,
+    "changed_answer_same_context": 0,
+    "changed_grade_same_context": 0
+  },
+  {
+    "config": "hybrid=false",
+    "same_context": 1,
+    "changed_answer_same_context": 1,
+    "changed_grade_same_context": 0
+  },
+  {
+    "config": "threshold=0.20",
+    "same_context": 20,
+    "changed_answer_same_context": 20,
+    "changed_grade_same_context": 7
+  },
+  {
+    "config": "threshold=0.40",
+    "same_context": 19,
+    "changed_answer_same_context": 19,
+    "changed_grade_same_context": 6
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "validated_at": "2026-10-24T09:55:46.990357+00:00",
+  "test_cases": 25,
+  "in_scope": 20,
+  "out_of_scope": 5,
+  "ofat_unique_configurations": 8,
+  "validated_result_arms": 11,
+  "production_only": true,
+  "metric_arithmetic_verified": true,
+  "credential_scan_passed": true,
+  "application_and_data_local_changes": false
+}

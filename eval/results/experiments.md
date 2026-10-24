@@ -20,3 +20,20 @@ Default anchor reuse, if any, is recorded in the raw JSON. Table accuracy is amo
 Charts: `eval\results\accuracy_vs_chunk_size.png`, `eval\results\accuracy_vs_top_k.png`
 
 Raw data: [`experiments.json`](experiments.json)
+
+## Retrieved-context changes relative to default
+
+This compares ordered (file, chunk_id, passage text) selections for the 20 in-scope questions. Identical contexts with differing answer grades do not establish a retrieval-parameter effect.
+
+| Configuration | Same contexts /20 | Changed returned strings despite same context | Changed grades despite same context |
+|---|---:|---:|---:|
+| default | 20 | 0 | 0 |
+| chunk_size=400 | 0 | 0 | 0 |
+| chunk_size=1200 | 0 | 0 | 0 |
+| top_k=2 | 0 | 0 | 0 |
+| top_k=6 | 0 | 0 | 0 |
+| hybrid=false | 1 | 1 | 0 |
+| threshold=0.20 | 20 | 20 | 7 |
+| threshold=0.40 | 19 | 19 | 6 |
+
+Returned-string differences may include SDK request metadata; changed-grade counts are shown separately. No fixed generation seed was imposed.

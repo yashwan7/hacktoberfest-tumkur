@@ -187,3 +187,9 @@ Refusal-policy labels in no-RAG include its retained evidence-only prompt, not j
 - **experiment/threshold=0.40/q18 — wrong synthesis (WRONG)**: Give two examples of unacceptable behavior under Gradio's Code of Conduct. — The candidate answer is a raw API response containing internal model reasoning and metadata rather than a direct answer to the question.
 - **experiment/threshold=0.40/q19 — wrong synthesis (WRONG)**: What link states does REsq Mesh classify, and what does it use for that classifier? — The candidate answer is a raw API response containing internal model reasoning and metadata rather than a factual answer.
 - **experiment/threshold=0.40/q20 — wrong synthesis (WRONG)**: How can REsq Mesh verify that its AI output and case data are trustworthy? — The candidate answer is a raw API response containing internal reasoning and metadata rather than a factual answer to the question.
+
+## Human-review cautions
+
+The judge labeled threshold=.40/q16 PARTIAL partly because an additional Windows formatter command was absent from the short ground truth. That command is documented in data/gradio/CONTRIBUTING.md, but the returned JSON is also truncated. Preserve the recorded grade and inspect both source support and output completeness; do not treat every cited judge reason as proven. No questions or expected answers were changed after scoring.
+
+The 155 classified failures are configuration-question observations across ten distinct run arms (250 total observations), not 155 distinct test questions. Reused default-anchor rows are excluded. The raw evidence and provisional labels are preserved.

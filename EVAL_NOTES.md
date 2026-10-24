@@ -38,3 +38,14 @@
 - Direct evaluation entry points now fail closed if production rag cannot import or lacks the agreed interface; they no longer silently fall back to stub_rag. Stub use requires an explicit helper argument and is never used in reported live results. The credential helper now uses python-dotenv directly.
 - Failure analysis covers all completed production arms, including explicit judge/service failures; reused default-anchor rows are excluded from duplicate counts. Format diagnostics separately flag SDK dumps even if the semantic judge labeled them CORRECT. Raw semantic grades are preserved rather than silently overridden.
 - Optional-comparison scheduling assumption: prioritize required OFAT, failure analysis and documentation; defer the two-model run if it cannot start before 15:10 Asia/Calcutta, leaving an assumed twenty-minute wrap-up window before 15:30. This is a planning assumption for the hackathon, not a benchmark measurement.
+
+## Final measured status
+
+- All eight OFAT configurations completed with 20/20 in-scope judgments each. Confirmed accuracy: default 20%, chunk 400 20%, chunk 1200 40%, top_k 2 20%, top_k 6 30%, hybrid off 25%, threshold .20 20%, threshold .40 25%. These are single-pass observations, not held-out optimality claims.
+- Paired RAG: 4 CORRECT, 1 PARTIAL, 15 WRONG; no-RAG: 0 CORRECT, 0 PARTIAL, 20 WRONG. Both have 20/20 judgments and 5/5 out-of-scope refusals. The no-RAG prompt confound remains explicitly disclosed.
+- Context diagnostics: threshold .20 used identical passages on 20/20 questions, with seven changed grades; threshold .40 retained identical contexts on 19/20, with six changed grades among those. Do not attribute these differences to retrieval improvements.
+- Output diagnostics identify 15/20 paired RAG SDK dumps marked MAX_TOKENS, including one judged CORRECT. Semantic scores do not certify usable final output.
+- Full failure analysis lists every classified observation: 155 failures across 250 observations, with reused default rows excluded. Labels are provisional; raw grades remain unchanged.
+- Optional 31B comparison was deferred. Its former prototype JSON was replaced with an explicit NOT_RUN status; no 31B quality or latency number is claimed.
+- Final validation checks production imports, 25 fixed cases, eight unique one-factor configurations, arithmetic, source/application immutability, PNG signatures and absence of the credential in tracked files. Both charts were visually inspected.
+- Final repository-local Git identity, per user update: Harsha Vardhan <harshavardhanrj230407@gmail.com>. No global Git configuration was changed.
