@@ -2,6 +2,7 @@ google-genai
 python-dotenv
 sentence-transformers
 rank-bm25
-gradio
+gradio==4.44.1
+pydantic==2.13.5
 numpy
 matplotlib
