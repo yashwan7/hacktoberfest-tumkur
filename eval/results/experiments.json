@@ -1,0 +1,4838 @@
+{
+  "rag_module": "eval.stub_rag",
+  "judge_backend": "disabled",
+  "results": [
+    {
+      "name": "default",
+      "factor": "default",
+      "factor_value": "800/4/true/0.30",
+      "config": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "top_k": 4,
+        "hybrid": true,
+        "threshold": 0.3,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "default",
+        "factor": "default",
+        "factor_value": "800/4/true/0.30"
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 3.992000000008211e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 1.6600000000283055e-07
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 1.25000000000125e-07
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "chunk_size=400",
+      "factor": "chunk_size",
+      "factor_value": 400,
+      "config": {
+        "chunk_size": 400,
+        "overlap": 120,
+        "top_k": 4,
+        "hybrid": true,
+        "threshold": 0.3,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "chunk_size=400",
+        "factor": "chunk_size",
+        "factor_value": 400
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 4.0039999999602616e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "chunk_size=1200",
+      "factor": "chunk_size",
+      "factor_value": 1200,
+      "config": {
+        "chunk_size": 1200,
+        "overlap": 120,
+        "top_k": 4,
+        "hybrid": true,
+        "threshold": 0.3,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "chunk_size=1200",
+        "factor": "chunk_size",
+        "factor_value": 1200
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 9.549999999999837e-07
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 2.29169999999973e-05
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "top_k=2",
+      "factor": "top_k",
+      "factor_value": 2,
+      "config": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "top_k": 2,
+        "hybrid": true,
+        "threshold": 0.3,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "top_k=2",
+        "factor": "top_k",
+        "factor_value": 2
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 3.164000000013822e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "top_k=6",
+      "factor": "top_k",
+      "factor_value": 6,
+      "config": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "top_k": 6,
+        "hybrid": true,
+        "threshold": 0.3,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "top_k=6",
+        "factor": "top_k",
+        "factor_value": 6
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 3.184000000031051e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "hybrid=false",
+      "factor": "hybrid",
+      "factor_value": false,
+      "config": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "top_k": 4,
+        "hybrid": false,
+        "threshold": 0.3,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "hybrid=false",
+        "factor": "hybrid",
+        "factor_value": false
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 3.4960000000194834e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "threshold=0.20",
+      "factor": "threshold",
+      "factor_value": 0.2,
+      "config": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "top_k": 4,
+        "hybrid": true,
+        "threshold": 0.2,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "threshold=0.20",
+        "factor": "threshold",
+        "factor_value": 0.2
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 2.6599999999737946e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "threshold=0.40",
+      "factor": "threshold",
+      "factor_value": 0.4,
+      "config": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "top_k": 4,
+        "hybrid": true,
+        "threshold": 0.4,
+        "model": "gemma-4-26b-a4b-it",
+        "name": "threshold=0.40",
+        "factor": "threshold",
+        "factor_value": 0.4
+      },
+      "summary": {
+        "total": 25,
+        "in_scope": 20,
+        "out_of_scope": 5,
+        "judged": 0,
+        "correct": 0,
+        "partial": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "graded_score": null,
+        "citation_hits": 0,
+        "citation_hit_rate": 0.0,
+        "refusal_correct": 5,
+        "refusal_accuracy": 1.0,
+        "avg_latency_s": 2.992000000007211e-08
+      },
+      "rows": [
+        {
+          "case": {
+            "id": "q01",
+            "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+            "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "contribution policy"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q02",
+            "question": "What should a Gradio bug report's title contain?",
+            "expected_answer": "A clear, descriptive title that summarizes the problem.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q03",
+            "question": "What two behaviors should a Gradio bug report compare?",
+            "expected_answer": "What you expected to happen versus what actually happened.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q04",
+            "question": "How should reproduction instructions be written in a Gradio bug report?",
+            "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q05",
+            "question": "What does Gradio consider the most important part of a bug report reproduction?",
+            "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q06",
+            "question": "Which environment details should be included in a Gradio bug report?",
+            "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "issue reporting"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q07",
+            "question": "How do I install Gradio from main on macOS or Linux?",
+            "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q08",
+            "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+            "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q09",
+            "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+            "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q10",
+            "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+            "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "local setup"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q11",
+            "question": "Where are Gradio's Python unit tests located?",
+            "expected_answer": "In the repository's `/test` directory.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "repository structure"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q12",
+            "question": "Which test tools does Gradio use?",
+            "expected_answer": "Pytest, Playwright, and Vitest.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q13",
+            "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+            "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "testing"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q14",
+            "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+            "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q15",
+            "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+            "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "PR process"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q16",
+            "question": "Which command formats Gradio backend code before pushing?",
+            "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+            "expected_source": "CONTRIBUTING.md",
+            "category": "coding style"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q17",
+            "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+            "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q18",
+            "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+            "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+            "expected_source": "CODE_OF_CONDUCT.md",
+            "category": "code of conduct"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q19",
+            "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+            "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 0.0
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q20",
+            "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+            "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+            "expected_source": "resqmesh/README.md",
+            "category": "ResQMesh"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.100000000270554e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": false,
+          "judge": {
+            "label": "UNAVAILABLE",
+            "reason": "Gemma judge unavailable"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q21",
+            "question": "What is the weather forecast in Bengaluru tomorrow?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q22",
+            "question": "Give me a recipe for chocolate chip cookies.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.200000000217918e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q23",
+            "question": "Should I buy shares of a particular technology company today?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q24",
+            "question": "Who won the most recent World Cup?",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.099999999923609e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        },
+        {
+          "case": {
+            "id": "q25",
+            "question": "Write a poem about autumn leaves.",
+            "expected_refused": true,
+            "category": "out of scope"
+          },
+          "response": {
+            "answer": "The production rag.py has not been pushed yet; no answer is available from the local stub.",
+            "sources": [],
+            "passages": [],
+            "refused": true,
+            "latency_s": 4.1999999998709736e-08
+          },
+          "citation_hit": false,
+          "refusal_correct": true,
+          "judge": {
+            "label": "NOT_APPLICABLE",
+            "reason": "Out-of-scope refusal case"
+          },
+          "error": null
+        }
+      ]
+    }
+  ]
+}
