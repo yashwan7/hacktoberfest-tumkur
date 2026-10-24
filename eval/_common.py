@@ -76,14 +76,18 @@ def make_judge(model: str = "gemma-4-26b-a4b-it"):
 
     try:
         from google import genai  # type: ignore
+        from google.genai import types
 
-        client = genai.Client(api_key=api_key)
+        client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=45000, retry_options=types.HttpRetryOptions(attempts=1)))
 
         def modern(prompt: str) -> str:
-            response = client.models.generate_content(model=model, contents=prompt)
-            return getattr(response, "text", "") or str(response)
+            response = client.models.generate_content(model=model, contents=prompt, config=types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_level="minimal"), max_output_tokens=512, temperature=0))
+            text = getattr(response, "text", "")
+            if not text:
+                raise RuntimeError("Judge temporarily returned no final text")
+            return text
 
-        return modern, "google-genai"
+        return modern, "google-genai/minimal-thinking-temp0-512tokens-v2"
     except ImportError:
         pass
 
@@ -115,7 +119,7 @@ def with_retries(callable_, *, retries: int = 4, base_delay: float = 2.0,
             last_error = exc
             message = str(exc).lower()
             retryable = any(token in message for token in
-                            ("429", "rate limit", "resource exhausted", "temporarily", "timeout"))
+                            ("429", "rate limit", "resource exhausted", "temporarily", "timeout", "500", "502", "503", "504", "internal error", "getaddrinfo"))
             if attempt >= retries or not retryable:
                 break
             time.sleep(base_delay * (2 ** attempt))
@@ -159,6 +163,9 @@ def score_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "in_scope": len(in_scope),
         "out_of_scope": len(out_scope),
         "judged": len(judged),
+        "unavailable": len(in_scope) - len(judged),
+        "accuracy_all_in_scope": counts["CORRECT"] / len(in_scope) if in_scope else None,
+        "graded_score_all_in_scope": (counts["CORRECT"] + 0.5 * counts["PARTIAL"]) / len(in_scope) if in_scope else None,
         "correct": counts["CORRECT"],
         "partial": counts["PARTIAL"],
         "wrong": counts["WRONG"],
@@ -190,7 +197,9 @@ def markdown_table(summary: dict[str, Any], *, title: str = "Evaluation") -> str
         f"| Correct | {summary['correct']} |",
         f"| Partial | {summary['partial']} |",
         f"| Wrong | {summary['wrong']} |",
-        f"| Accuracy | {fmt(summary['accuracy'])} |",
+        f"| Accuracy among judged | {fmt(summary['accuracy'])} |",
+        f"| Confirmed correct / all in-scope | {fmt(summary.get('accuracy_all_in_scope'))} |",
+        f"| Unavailable judgments | {summary.get('unavailable', summary['in_scope']-summary['judged'])} |",
         f"| Graded score (correct + 0.5×partial) | {fmt(summary['graded_score'])} |",
         f"| Citation hit rate | {fmt(summary['citation_hit_rate'])} |",
         f"| Out-of-scope refusal accuracy | {fmt(summary['refusal_accuracy'])} |",

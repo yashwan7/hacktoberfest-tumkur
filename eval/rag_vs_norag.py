@@ -49,7 +49,8 @@ def main() -> None:
         if case.get("expected_refused"):
             continue
         no_rag = no_rag_rows[case["id"]]
-        if no_rag["judge"].get("label") == "WRONG" and not no_rag["response"].get("refused"):
+        if (no_rag["judge"].get("label") == "WRONG" and not no_rag["response"].get("refused")
+                and not no_rag["response"].get("answer", "").startswith("sdk_http_response=")):
             hallucinations.append({
                 "id": case["id"], "question": case["question"],
                 "answer": no_rag["response"].get("answer", ""),
