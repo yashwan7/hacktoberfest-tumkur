@@ -1,0 +1,31 @@
+{
+  "mode": "failures",
+  "cli": "failure_analysis.py",
+  "args": [],
+  "started_at": "2026-10-24T09:53:35.921567+00:00",
+  "input_sha256": {
+    "rag.py": "a725f425f45bd5ad27a08a3e9677ea6e1ffc830d0bf57e5be55b8d23fb042b08",
+    "app.py": "e09aee7aaa9ad5319b43ef0450f8b3482a9bf0ebdc0843b24fd9bc631d69df7c",
+    "eval/test_set.json": "c57513a48efe02edee3d79840d7d45147b4b60b8165703e1d6354b6d0f1f177e",
+    "data/gradio/CODE_OF_CONDUCT.md": "9ab8d35f165f26c74b461ab8410f744fd637527962541ce6b4d4d3a17ea9d23b",
+    "data/gradio/CONTRIBUTING.md": "b602ee381cf3d040b0c02b8700de65331f7bcabc05ea0fea6735db6da566eb66",
+    "data/gradio/guides/chatbot-fast.md": "30b8cd61bf57e2388188063e65cc1461aa0019e08d4829c84a9d3344dc86ac0a",
+    "data/gradio/guides/quickstart.md": "0236ee8f396d0b186edcf50c5ad15dd7a4e13dabfc731f28b561f65d993ada2a",
+    "data/gradio/guides/sharing-your-app.md": "9f1c8cf410d89553e1e330ebb07f5c14fed8713893e172772b3f9353d517bbfa",
+    "data/gradio/README.md": "0fdca11ad15d0c84a43ba0cc2d66d21b38f713fd4ae73f51245316ce234976a4",
+    "data/gradio/style.md": "4171805601575d0232535c270b1ded07b781479729ef10b56ba387883564eccc",
+    "data/resqmesh/README.md": "3663d9ca2740f023717e0b9a1920045150c51fc34c85c44ff2bc4ad3ca4bfbbf"
+  },
+  "packages": {
+    "google-genai": "2.33.0",
+    "sentence-transformers": "6.2.0",
+    "torch": "2.9.1+cpu",
+    "numpy": "2.5.3",
+    "rank-bm25": "0.2.2",
+    "transformers": "5.20.2"
+  },
+  "generation_calls": [],
+  "status": "FINISHED",
+  "finished_at": "2026-10-24T09:53:35.966786+00:00",
+  "application_and_data_unchanged": true
+}
