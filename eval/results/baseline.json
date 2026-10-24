@@ -1,0 +1,1442 @@
+{
+  "run_name": "baseline",
+  "created_at": "2026-10-24T08:38:52.153724+00:00",
+  "rag_module": "rag",
+  "judge_backend": "google-genai",
+  "config": {
+    "data_dir": "data",
+    "top_k": 4,
+    "threshold": 0.3,
+    "use_rag": true,
+    "hybrid": true,
+    "model": "gemma-4-26b-a4b-it"
+  },
+  "summary": {
+    "total": 25,
+    "in_scope": 20,
+    "out_of_scope": 5,
+    "judged": 13,
+    "correct": 5,
+    "partial": 4,
+    "wrong": 4,
+    "accuracy": 0.38461538461538464,
+    "graded_score": 0.5384615384615384,
+    "citation_hits": 20,
+    "citation_hit_rate": 1.0,
+    "refusal_correct": 5,
+    "refusal_accuracy": 1.0,
+    "avg_latency_s": 68.416196
+  },
+  "rows": [
+    {
+      "case": {
+        "id": "q01",
+        "question": "What is currently the most valuable way for an outside contributor to help Gradio?",
+        "expected_answer": "Open a clear, detailed, reproducible issue; Gradio has paused accepting pull requests from outside the maintainer team.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "contribution policy"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   Role: Open-source contributor guide assistant.\n    *   Constraint 1: Use *only* the provided documentation passages.\n    *   Constraint 2: If unsupported or unrelated, refuse.\n    *   Constraint 3: Return valid JSON only with `answer` (string) and `refused` (boolean).\n    *   Constraint 4: Use compact inline citations like `[CONTRIBUTING.md#3]`.\n    *   Constraint 5: For refusal, answer briefly that the question is outside the indexed guide.\n    *   User Question: \"What is currently the most valuable way for an outside contributor to help Gradio?\"\n\n    *   `gradio/CONTRIBUTING.md [chunk_id=0]`: \"the best way to help us today is by **opening a detailed issue** rather than a pull request.\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=1]`: \"So the single most valuable thing you can do is **file a clear, detailed, reproducible issue.**\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=4]`: Mentions detailed feature requests shape the roadmap.\n    *   `gradio/CONTRIBUTING.md [chunk_id=5]`: \"If you're an outside contributor, the most helpful thing you can do is [open a detailed issue](#-the-best-way-to-contribute-open-a-great-issue)...\"\n\n    *   The most valuable thing for an outside contributor is to file a clear, detailed, and reproducible issue [CONTRIBUTING.md#1]. This is preferred over pull requests, as Gradio has paused accepting PRs from outside the maintainer team [CONTRIBUTING.md#0].\n\n    *   `answer`: \"The single most valuable thing an outside contributor can do is file a clear, detailed, and reproducible issue [CONTRIBUTING.md#1]. This is preferred over submitting pull requests, as Gradio has paused accepting pull requests from those outside the maintainer team [CONTRIBUTING.md#0].\"\n    *   `refused`: `false`.\n\n    *   `answer`: \"The most valuable thing an outside contributor can do is file a clear, detailed, and reproducible issue [CONTRIBUTING.md#1]. This is because Gradio has paused accepting pull requests\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='uGbcav-mEIzj694Pu57luQc' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=1053,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=1053\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1562\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 0
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 5
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 0,
+            "text": "# Contributing to Gradio\n\n![GitHub issues by-label](https://img.shields.io/github/issues/gradio-app/gradio/good%20first%20issue?color=fe7c01&link=https%3A%2F%2Fgithub.com%2Fgradio-app%2Fgradio%2Fissues%3Fq%3Dis%253Aopen%2Bis%253Aissue%2Blabel%253A%2522good%2Bfirst%2Bissue%2522)\n\n\nMore than 300 awesome developers have contributed to the `gradio` library, and the best way to help us today is by **opening a detailed issue** rather than a pull request.\n\n## 📝 The best way to contribute: open a great issue\n\nWe have **paused accepting pull requests from outside the Gradio maintainer team.** As AI coding agents have become widespread, the volume of community PRs has grown to the point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at",
+            "score": 0.6927
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4,
+            "text": "ncluding a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible — a link to a small repro/demo, a sketch, or a screenshot of a similar feature elsewhere helps us understand the request quickly.\n5. **Alternatives you've considered**, including any workarounds you're currently using.\n\nDetailed feature requests directly shape our roadmap and help us prioritize what to build next.\n\n[#12519](https://github.com/gradio-app/gradio/issues/12519) is a good example of a feature request issue to follow.\n\n## 🏡 Setup Gradio locally\n\n> The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed",
+            "score": 0.6919
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.6365
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 5,
+            "text": "for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed issue](#-the-best-way-to-contribute-open-a-great-issue) — but you're also welcome to run Gradio locally to build a clean reproduction for your issue.\n\nThere are a few ways to install and run Gradio.\n\n### 🛠️ Install Gradio from `main`\n\n- Clone this repo\n- Navigate to the repo directory and run:\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/install_gradio.sh\n```\n  </td>\n  <td>\n\n```bash\nscripts\\install_gradio.bat\n```\n  </td>\n  </tr>\n</table>\n\n- Run the frontend (only required if you are making changes to the frontend and would like to preview them)\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>",
+            "score": 0.5893
+          }
+        ],
+        "refused": false,
+        "latency_s": 13.1076
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "PARTIAL",
+        "reason": "The answer is truncated and does not specify that pull requests are paused for those outside the maintainer team."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q02",
+        "question": "What should a Gradio bug report's title contain?",
+        "expected_answer": "A clear, descriptive title that summarizes the problem.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "issue reporting"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   User Question: \"What should a Gradio bug report's title contain?\"\n    *   Task: Answer using only the provided documentation passages.\n    *   Format: Valid JSON with `answer` (string) and `refused` (boolean).\n    *   Citations: Compact inline citations like `[CONTRIBUTING.md#3]`.\n    *   Constraints: If unsupported or unrelated, refuse.\n\n    *   `gradio/CONTRIBUTING.md [chunk_id=3]`: Discusses \"Requesting a feature\" (requires clear, descriptive title) and mentions a bug report example.\n    *   `gradio/CONTRIBUTING.md [chunk_id=1]`: Discusses \"Reporting a bug\" (requires a \"clear, descriptive title that summarizes the problem\").\n    *   `gradio/CONTRIBUTING.md [chunk_id=2]`: Continues \"Reporting a bug\" (mentions \"title that summarizes the problem\").\n    *   `gradio/CONTRIBUTING.md [chunk_id=20]`: Discusses submitting PRs.\n\n    *   The documentation explicitly states under \"Reporting a bug\" that one should include: \"A clear, descriptive title that summarizes the problem\" [CONTRIBUTING.md#1, CONTRIBUTING.md#2].\n\n    *   `answer`: \"A bug report should include a clear, descriptive title that summarizes the problem [CONTRIBUTING.md#1, CONTRIBUTING.md#2].\"\n    *   `refused`: false.\n\n    *   Does it use *only* provided passages? Yes.\n    *   Is the JSON valid? Yes.\n    *   Are citations compact and inline? Yes.\n    *   Is the refusal logic correct? Yes (answer is supported).\n\n    *Self-correction*: Chunk 1 and 2 both mention the title. Chunk 1 says \"A clear, descriptive title that summarizes the problem.\" Chunk 2 starts with \"itle** that summarizes the problem.\"\n\n    *Final check of chunk content*:\n    Chunk 1: \"1. **A clear, descriptive title** that summarizes the problem.\"\n    Chunk 2: \"itle** that summarizes the problem.\"\n\n    Answer: A bug report should include a clear, descriptive title that summarizes the problem [CONTRIBUTING.md#1, CONTRIBUTING.md\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='7mbcapmBDJqC694PotanmA4' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=1011,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=1011\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1520\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 20
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3,
+            "text": "__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error tracebacks** where relevant.\n\nThe smaller and more self-contained the reproduction, the faster we can fix it.\n\n[#10568](https://github.com/gradio-app/gradio/issues/10568) is a good example of a bug report to follow.\n\n### ✨ Requesting a feature\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title.**\n2. **The problem or use case** you're trying to solve — what are you trying to build, and where does Gradio fall short today?\n3. **A detailed description of the feature** you'd like, including a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible —",
+            "score": 0.757
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.7435
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2,
+            "text": "itle** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step instructions to reproduce the bug**, numbered and as specific as possible (which component, which event, what input, etc.).\n4. **A minimal reproduction.** This is the most important part. Please include the smallest self-contained Gradio app that triggers the bug, for example:\n   - a short code snippet (ideally runnable as-is), and/or\n   - a link to a minimal hosted demo on [Hugging Face Spaces](https://huggingface.co/spaces) or a small repo that reproduces the issue.\n5. **Your environment**: Gradio version (`gradio --version` or `gr.__version__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error",
+            "score": 0.6772
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 20,
+            "text": "en't been included in a release yet, they will only be visible there. \n\n## 📮 Submitting PRs\n\nAll PRs should be submitted against `main`, and ideally should address an open issue, unless the change is small. Direct commits to main are blocked, and PRs require an approving review to merge into main. By convention, the Gradio maintainers will review PRs when:\n\n- An initial review has been requested\n- A clear, descriptive title has been assigned to the PR\n- A maintainer (@abidlabs, @aliabid94, @aliabd, @AK391, @dawoodkhan82, @pngwn, @freddyaboulton, @hannahblair, @hysts, @whitphx) is tagged in the PR comments and asked to complete a review\n\n 🧹 We ask that you make sure initial CI checks are passing before requesting a review. One of the Gradio maintainers will merge the PR when all the checks",
+            "score": 0.6065
+          }
+        ],
+        "refused": false,
+        "latency_s": 12.6238
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q03",
+        "question": "What two behaviors should a Gradio bug report compare?",
+        "expected_answer": "What you expected to happen versus what actually happened.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "issue reporting"
+      },
+      "response": {
+        "answer": "A Gradio bug report should compare what you expected to happen versus what actually happened [CONTRIBUTING.md#2].",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/README.md",
+            "chunk_id": 17
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3,
+            "text": "__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error tracebacks** where relevant.\n\nThe smaller and more self-contained the reproduction, the faster we can fix it.\n\n[#10568](https://github.com/gradio-app/gradio/issues/10568) is a good example of a bug report to follow.\n\n### ✨ Requesting a feature\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title.**\n2. **The problem or use case** you're trying to solve — what are you trying to build, and where does Gradio fall short today?\n3. **A detailed description of the feature** you'd like, including a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible —",
+            "score": 0.7672
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2,
+            "text": "itle** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step instructions to reproduce the bug**, numbered and as specific as possible (which component, which event, what input, etc.).\n4. **A minimal reproduction.** This is the most important part. Please include the smallest self-contained Gradio app that triggers the bug, for example:\n   - a short code snippet (ideally runnable as-is), and/or\n   - a link to a minimal hosted demo on [Hugging Face Spaces](https://huggingface.co/spaces) or a small repo that reproduces the issue.\n5. **Your environment**: Gradio version (`gradio --version` or `gr.__version__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error",
+            "score": 0.7628
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.7567
+          },
+          {
+            "file": "gradio/README.md",
+            "chunk_id": 17,
+            "text": "se `--global` to install at the user level (applies to all projects), or an agent flag such as `--claude` to also create a link in that agent's skills directory.\n\nYou can also install a skill for a **specific Gradio Space**, which generates API usage docs (Python, JS, cURL) on the fly:\n\n```bash\ngradio skills add abidlabs/en2fr\n```\n\n## Questions?\n\nIf you'd like to report a bug or have a feature request, please create an [issue on GitHub](https://github.com/gradio-app/gradio/issues/new/choose). For general questions about usage, we are available on [our Discord server](https://discord.com/invite/feTf9x3ZSB) and happy to help.\n\nIf you like Gradio, please leave us a ⭐ on GitHub!\n\n## Open Source Stack\n\nGradio is built on top of many wonderful open-source libraries!\n\n[<img",
+            "score": 0.5957
+          }
+        ],
+        "refused": false,
+        "latency_s": 11.8977
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "CORRECT",
+        "reason": "The answer accurately reflects the facts provided in the ground truth."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q04",
+        "question": "How should reproduction instructions be written in a Gradio bug report?",
+        "expected_answer": "As numbered, step-by-step, specific instructions, including the component, event, and input where relevant.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "issue reporting"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   User question: \"How should reproduction instructions be written in a Gradio bug report?\"\n    *   Constraints: Use only provided documentation passages. Return JSON with `answer` (string) and `refused` (boolean). Use compact inline citations like `[CONTRIBUTING.md#3]`. If unsupported or unrelated, refuse.\n\n    *   Chunk 3: Mentions \"The smaller and more self-contained the reproduction, the faster we can fix it.\" and provides an example issue [#10568].\n    *   Chunk 1: General advice on filing clear, detailed, reproducible issues. Mentions \"Reporting a bug\" section start.\n    *   Chunk 2: Contains details on \"Reporting a bug\". Specifically:\n        *   Point 3: \"**Step-by-step instructions to reproduce the bug**, numbered and as specific as possible (which component, which event, what input, etc.).\"\n        *   Point 4: \"**A minimal reproduction.** This is the most important part. Please include the smallest self-contained Gradio app that triggers the bug, for example: - a short code snippet (ideally runnable as-is), and/or - a link to a minimal hosted demo on Hugging Face Spaces or a small repo that reproduces the issue.\"\n    *   Chunk 4: Discusses feature requests and local setup.\n\n    *   Reproduction instructions should be step-by-step, numbered, and as specific as possible (e.g., which component, event, input) [CONTRIBUTING.md#2].\n    *   Include a minimal reproduction, which is considered the most important part. This should be the smallest self-contained Gradio app, such as a short runnable code snippet or a link to a minimal hosted demo on Hugging Face Spaces or a small repo [CONTRIBUTING.md#2].\n    *   The smaller and more self-contained the reproduction, the faster it can be fixed [CONTRIBUTING.md#3].\n\n    *   `answer`: \"Reproduction instructions should be step-by-step, numbered, and as specific as possible, detailing which component, event, and input were used [CONTRIBUTING.md#2]. It is most important to include a minimal reproduction, meaning the smallest self-contained Gradio app that triggers the bug, such as a short runnable code snippet or a link to a minimal hosted demo on\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='GGfcapnuOOq90r4PkKSGqAk' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=994,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=994\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1503\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3,
+            "text": "__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error tracebacks** where relevant.\n\nThe smaller and more self-contained the reproduction, the faster we can fix it.\n\n[#10568](https://github.com/gradio-app/gradio/issues/10568) is a good example of a bug report to follow.\n\n### ✨ Requesting a feature\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title.**\n2. **The problem or use case** you're trying to solve — what are you trying to build, and where does Gradio fall short today?\n3. **A detailed description of the feature** you'd like, including a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible —",
+            "score": 0.7325
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.59
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2,
+            "text": "itle** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step instructions to reproduce the bug**, numbered and as specific as possible (which component, which event, what input, etc.).\n4. **A minimal reproduction.** This is the most important part. Please include the smallest self-contained Gradio app that triggers the bug, for example:\n   - a short code snippet (ideally runnable as-is), and/or\n   - a link to a minimal hosted demo on [Hugging Face Spaces](https://huggingface.co/spaces) or a small repo that reproduces the issue.\n5. **Your environment**: Gradio version (`gradio --version` or `gr.__version__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error",
+            "score": 0.5711
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4,
+            "text": "ncluding a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible — a link to a small repro/demo, a sketch, or a screenshot of a similar feature elsewhere helps us understand the request quickly.\n5. **Alternatives you've considered**, including any workarounds you're currently using.\n\nDetailed feature requests directly shape our roadmap and help us prioritize what to build next.\n\n[#12519](https://github.com/gradio-app/gradio/issues/12519) is a good example of a feature request issue to follow.\n\n## 🏡 Setup Gradio locally\n\n> The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed",
+            "score": 0.5578
+          }
+        ],
+        "refused": false,
+        "latency_s": 12.9981
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "CORRECT",
+        "reason": "The answer includes all the information specified in the ground truth."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q05",
+        "question": "What does Gradio consider the most important part of a bug report reproduction?",
+        "expected_answer": "A minimal reproduction: the smallest self-contained Gradio app, ideally runnable as-is, or a minimal hosted demo/repository.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "issue reporting"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   Role: Open-source contributor guide assistant.\n    *   Task: Answer the question using *only* the provided documentation passages.\n    *   Constraints:\n        *   If unsupported or unrelated: Return `{\"answer\": \"brief refusal message\", \"refused\": true}`.\n        *   If supported: Return `{\"answer\": \"the answer with [SOURCE#ID] citations\", \"refused\": false}`.\n        *   Output format: Valid JSON only.\n    *   Question: \"What does Gradio consider the most important part of a bug report reproduction?\"\n\n    *   `gradio/CONTRIBUTING.md [chunk_id=3]`: Mentions \"The smaller and more self-contained the reproduction, the faster we can fix it.\" and provides an example issue.\n    *   `gradio/CONTRIBUTING.md [chunk_id=1]`: Mentions \"the single most valuable thing you can do is file a clear, detailed, reproducible issue.\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=2]`: Section \"Reporting a bug\" -> \"4. **A minimal reproduction. This is the most important part.** Please include the smallest self-contained Gradio app that triggers the bug...\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=4]`: Mentions feature requests.\n\n    *   The question asks about the most important part of a bug report reproduction.\n    *   Chunk 2 explicitly states: \"4. **A minimal reproduction. This is the most important part.**\"\n    *   It further explains that this should include \"the smallest self-contained Gradio app that triggers the bug, for example: a short code snippet (ideally runnable as-is), and/or a link to a minimal hosted demo on Hugging Face Spaces or a small repo that reproduces the issue.\" [chunk_id=2].\n\n    *   Answer: The most important part of a bug report is a minimal reproduction, which should be the smallest self-contained Gradio app that triggers the bug, such as a short runnable code snippet or a link to a minimal hosted demo on Hugging Face Spaces or a small repo [gradio/CONTRIBUTING.md#2].\n    *   Citations: [gradio/CONTRIBUTING.md#2].\n\n    *   Valid JSON?\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='U2fcasWbGY2m694P8qvqyA4' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=996,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=996\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1505\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3,
+            "text": "__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error tracebacks** where relevant.\n\nThe smaller and more self-contained the reproduction, the faster we can fix it.\n\n[#10568](https://github.com/gradio-app/gradio/issues/10568) is a good example of a bug report to follow.\n\n### ✨ Requesting a feature\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title.**\n2. **The problem or use case** you're trying to solve — what are you trying to build, and where does Gradio fall short today?\n3. **A detailed description of the feature** you'd like, including a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible —",
+            "score": 0.7186
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.6864
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2,
+            "text": "itle** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step instructions to reproduce the bug**, numbered and as specific as possible (which component, which event, what input, etc.).\n4. **A minimal reproduction.** This is the most important part. Please include the smallest self-contained Gradio app that triggers the bug, for example:\n   - a short code snippet (ideally runnable as-is), and/or\n   - a link to a minimal hosted demo on [Hugging Face Spaces](https://huggingface.co/spaces) or a small repo that reproduces the issue.\n5. **Your environment**: Gradio version (`gradio --version` or `gr.__version__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error",
+            "score": 0.6271
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4,
+            "text": "ncluding a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible — a link to a small repro/demo, a sketch, or a screenshot of a similar feature elsewhere helps us understand the request quickly.\n5. **Alternatives you've considered**, including any workarounds you're currently using.\n\nDetailed feature requests directly shape our roadmap and help us prioritize what to build next.\n\n[#12519](https://github.com/gradio-app/gradio/issues/12519) is a good example of a feature request issue to follow.\n\n## 🏡 Setup Gradio locally\n\n> The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed",
+            "score": 0.5609
+          }
+        ],
+        "refused": false,
+        "latency_s": 15.191
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "WRONG",
+        "reason": "The candidate answer is technical metadata and does not provide an answer to the question."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q06",
+        "question": "Which environment details should be included in a Gradio bug report?",
+        "expected_answer": "The Gradio version, Python version, operating system, and browser for frontend issues.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "issue reporting"
+      },
+      "response": {
+        "answer": "```json\n{\n \"answer\": \"When reporting a bug, you should include your environment details: Gradio version (`gradio --version` or `gr.__version__`),",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "gradio/README.md",
+            "chunk_id": 17
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3,
+            "text": "__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error tracebacks** where relevant.\n\nThe smaller and more self-contained the reproduction, the faster we can fix it.\n\n[#10568](https://github.com/gradio-app/gradio/issues/10568) is a good example of a bug report to follow.\n\n### ✨ Requesting a feature\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title.**\n2. **The problem or use case** you're trying to solve — what are you trying to build, and where does Gradio fall short today?\n3. **A detailed description of the feature** you'd like, including a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible —",
+            "score": 0.7414
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 2,
+            "text": "itle** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step instructions to reproduce the bug**, numbered and as specific as possible (which component, which event, what input, etc.).\n4. **A minimal reproduction.** This is the most important part. Please include the smallest self-contained Gradio app that triggers the bug, for example:\n   - a short code snippet (ideally runnable as-is), and/or\n   - a link to a minimal hosted demo on [Hugging Face Spaces](https://huggingface.co/spaces) or a small repo that reproduces the issue.\n5. **Your environment**: Gradio version (`gradio --version` or `gr.__version__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error",
+            "score": 0.7077
+          },
+          {
+            "file": "gradio/README.md",
+            "chunk_id": 17,
+            "text": "se `--global` to install at the user level (applies to all projects), or an agent flag such as `--claude` to also create a link in that agent's skills directory.\n\nYou can also install a skill for a **specific Gradio Space**, which generates API usage docs (Python, JS, cURL) on the fly:\n\n```bash\ngradio skills add abidlabs/en2fr\n```\n\n## Questions?\n\nIf you'd like to report a bug or have a feature request, please create an [issue on GitHub](https://github.com/gradio-app/gradio/issues/new/choose). For general questions about usage, we are available on [our Discord server](https://discord.com/invite/feTf9x3ZSB) and happy to help.\n\nIf you like Gradio, please leave us a ⭐ on GitHub!\n\n## Open Source Stack\n\nGradio is built on top of many wonderful open-source libraries!\n\n[<img",
+            "score": 0.6445
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.6319
+          }
+        ],
+        "refused": false,
+        "latency_s": 13.0678
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "PARTIAL",
+        "reason": "It only specifies the Gradio version and omits the Python version, operating system, and browser."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q07",
+        "question": "How do I install Gradio from main on macOS or Linux?",
+        "expected_answer": "Clone the repository, enter it, and run `bash scripts/install_gradio.sh`.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "local setup"
+      },
+      "response": {
+        "answer": "```json\n{\n  \"answer\": \"To install Gradio from `main` on macOS or Linux, clone the repository, navigate to the repository directory, and run `bash scripts/install_gradio.sh`",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 5
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 7
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 23
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 6
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 5,
+            "text": "for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed issue](#-the-best-way-to-contribute-open-a-great-issue) — but you're also welcome to run Gradio locally to build a clean reproduction for your issue.\n\nThere are a few ways to install and run Gradio.\n\n### 🛠️ Install Gradio from `main`\n\n- Clone this repo\n- Navigate to the repo directory and run:\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/install_gradio.sh\n```\n  </td>\n  <td>\n\n```bash\nscripts\\install_gradio.bat\n```\n  </td>\n  </tr>\n</table>\n\n- Run the frontend (only required if you are making changes to the frontend and would like to preview them)\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>",
+            "score": 0.7929
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 7,
+            "text": "t\n```\n  </td>\n  </tr>\n</table>\n\nIf you have a different Python version and conflicting packages during the installation, please first run:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/create_test_requirements.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\create_test_requirements.bat\n```\n  </td>\n  </tr>\n</table>\n\n\n### 📦 Using dev containers\n\nInstead of installing Gradio locally, you can alternatively use dev containers. This is supported on all platforms (macOS/Windows/Linux), as well as on GitHub Codespaces. \n\nPrerequisites:\n\n- An editor which supports dev containers, like VS Code\n- Docker support on the host computer:\n  - macOS: [Docker Desktop 2.0+](https://www.docker.com/products/docker-desktop/)\n  - Windows: [Docker Desktop",
+            "score": 0.6748
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 23,
+            "text": "dule \"<filename>\"`\n\nVerify that you've used the correct filename of your gradio app, and that you're in the directory of the file. \n\n---\n\n```ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL @self/spa@1.0.0 build:local: vite build --mode production:local --emptyOutDir \"--emptyOutDir\"```\n\nDelete `/node_modules` and `pnpm-lock.yaml`:\n\n```\nrm -rf node_modules/\nrm pnpm-lock.yaml\n```\n\nand run the install scripts:\n\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/install_gradio.sh\nbash scripts/build_frontend.sh\n```\n\nTo skip downloading assets used for offline support, pass\n`--no-download-offline-assets`.\n  </td>\n  <td>\n  \n```bash\nscripts\\install_gradio.bat\nscripts\\build_frontend.bat\n```\n\nTo skip downloading assets used for offline support, pass",
+            "score": 0.649
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 6,
+            "text": "ges to the frontend and would like to preview them)\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/run_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\n-  Install test requirements (only required if you want to run tests locally)\n\n(Note that it is highly recommended to use a virtual environment running **Python 3.10** since the versions of Gradio's dependencies are pinned)\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/install_test_requirements.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\install_test_requirements.bat\n```\n  </td>\n  </tr>\n</table>\n\nIf you have a different Python version and conflicting packages during the installation,",
+            "score": 0.6305
+          }
+        ],
+        "refused": false,
+        "latency_s": 13.053
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "CORRECT",
+        "reason": "The candidate answer contains all the steps provided in the ground truth."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q08",
+        "question": "Which Python environment does the Gradio contributor guide recommend for local setup?",
+        "expected_answer": "A virtual environment running Python 3.10, because Gradio dependencies are pinned.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "local setup"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   Role: Open-source contributor guide assistant.\n    *   Constraint 1: Use *only* the provided documentation passages.\n    *   Constraint 2: If the passages do not support the answer, or the question is unrelated, refuse.\n    *   Constraint 3: Return valid JSON only with `answer` (string) and `refused` (boolean).\n    *   Constraint 4: For a supported answer, use compact inline citations like `[CONTRIBUTING.md#3]`.\n    *   Constraint 5: For a refusal, state the question is outside the indexed guide.\n\n    *   User Question: \"Which Python environment does the Gradio contributor guide recommend for local setup?\"\n\n    *   `gradio/CONTRIBUTING.md [chunk_id=4]`: Discusses feature requests and local setup (but the content provided is about feature requests and says \"The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team\").\n    *   `gradio/guides/quickstart.md [chunk_id=1]`: \"We recommend installing Gradio using `pip`... Tip: It is best to install Gradio in a virtual environment.\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=9]`: Discusses repository structure.\n    *   `gradio/README.md [chunk_id=17]`: Discusses skills and reporting bugs.\n\n    *   The question asks about the recommended Python environment for local setup.\n    *   `gradio/guides/quickstart.md [chunk_id=1]` says: \"Tip: It is best to install Gradio in a virtual environment.\"\n    *   Does the *contributor guide* recommend this? The chunk `gradio/CONTRIBUTING.md [chunk_id=4]` mentions a section \"Setup Gradio locally\" but the text provided is cut off and says that section is primarily for maintainers. However, `gradio/guides/quickstart.md` is part of the documentation provided.\n    *   The text in `gradio/guides/quickstart.md [chunk_id=1]` explicitly states: \"It is best to install Gradio in a virtual environment.\"\n\n    *   Answer: It is best to install Gradio in a virtual environment [grad\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='n2fcapaiKKf1v_gPsonVmAM' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=987,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=987\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1496\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 9
+          },
+          {
+            "file": "gradio/README.md",
+            "chunk_id": 17
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4,
+            "text": "ncluding a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible — a link to a small repro/demo, a sketch, or a screenshot of a similar feature elsewhere helps us understand the request quickly.\n5. **Alternatives you've considered**, including any workarounds you're currently using.\n\nDetailed feature requests directly shape our roadmap and help us prioritize what to build next.\n\n[#12519](https://github.com/gradio-app/gradio/issues/12519) is a good example of a feature request issue to follow.\n\n## 🏡 Setup Gradio locally\n\n> The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed",
+            "score": 0.6822
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 1,
+            "text": "igher](https://www.python.org/downloads/).\n\n\nWe recommend installing Gradio using `pip`, which is included by default in Python. Run this in your terminal or command prompt:\n\n```bash\npip install --upgrade gradio\n```\n\n\nTip: It is best to install Gradio in a virtual environment. Detailed installation instructions for all common operating systems <a href=\"https://www.gradio.app/main/guides/installing-gradio-in-a-virtual-environment\">are provided here</a>. \n\n## Building Your First Demo\n\nYou can run Gradio in your favorite code editor, Jupyter notebook, Google Colab, or anywhere else you write Python. Let's write your first Gradio app:\n\n\n$code_hello_world_4\n\n\nTip: We shorten the imported name from <code>gradio</code> to <code>gr</code>. This is a widely adopted convention for better",
+            "score": 0.668
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 9,
+            "text": "om/docs/devcontainers/tutorial).\n\n## 🧱 Structure of the Repository\n\nIf you're a newcomer to Gradio, we recommend getting familiar with the overall structure of the repository so that you can focus on the part of the source code you'd like to contribute to.\n\n- `/gradio`: contains the Python source code for the library\n  - `/gradio/interface.py`: contains the Python source code for the core `Interface` class\n  - `/gradio/blocks.py`: contains the Python source code for the core `Blocks` class\n  - `/gradio/components/`: the directory that contains the Python source code for all of the Gradio components.\n- `/test`: contains Python unit tests for the library\n- `/js`: contains the HTML/JS/CSS source code for the library, including the fronted code for each component in a separate directory\n  -",
+            "score": 0.6666
+          },
+          {
+            "file": "gradio/README.md",
+            "chunk_id": 17,
+            "text": "se `--global` to install at the user level (applies to all projects), or an agent flag such as `--claude` to also create a link in that agent's skills directory.\n\nYou can also install a skill for a **specific Gradio Space**, which generates API usage docs (Python, JS, cURL) on the fly:\n\n```bash\ngradio skills add abidlabs/en2fr\n```\n\n## Questions?\n\nIf you'd like to report a bug or have a feature request, please create an [issue on GitHub](https://github.com/gradio-app/gradio/issues/new/choose). For general questions about usage, we are available on [our Discord server](https://discord.com/invite/feTf9x3ZSB) and happy to help.\n\nIf you like Gradio, please leave us a ⭐ on GitHub!\n\n## Open Source Stack\n\nGradio is built on top of many wonderful open-source libraries!\n\n[<img",
+            "score": 0.6209
+          }
+        ],
+        "refused": false,
+        "latency_s": 15.0517
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "PARTIAL",
+        "reason": "The answer identifies the virtual environment but omits the required Python version and the reasoning provided in the ground truth."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q09",
+        "question": "How do I start Gradio's frontend for frontend changes, and which port does it use by default?",
+        "expected_answer": "Run `bash scripts/run_frontend.sh`; the frontend uses port 9876 by default.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "local setup"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   User question: \"How do I start Gradio's frontend for frontend changes, and which port does it use by default?\"\n    *   Constraints: Use only the provided documentation. Return JSON only with `answer` (string) and `refused` (boolean). Use inline citations like `[CONTRIBUTING.md#3]`.\n\n    *   Chunk 11: \"If you're making frontend changes, start the frontend server: ... MacOS / Linux `bash scripts/run_frontend.sh` ... Windows `scripts\\run_frontend.bat`. This will open a separate browser tab. By default, Gradio will launch this on port 9876.\"\n    *   Chunk 10: Mentions running a Gradio app with `gradio app.py` (backend server).\n    *   Chunk 12: Confirms \"By default, Gradio will launch this on port 9876. Any changes to the frontend will also reload automatically in the browser.\"\n\n    *   How to start:\n        *   MacOS / Linux: `bash scripts/run_frontend.sh`\n        *   Windows: `scripts\\run_frontend.bat`\n    *   Default port: 9876.\n\n    *   Answer: To start the frontend server for frontend changes, use `bash scripts/run_frontend.sh` on MacOS/Linux or `scripts\\run_frontend.bat` on Windows [CONTRIBUTING.md#11]. By default, it will launch on port 9876 [CONTRIBUTING.md#11, CONTRIBUTING.md#12].\n\n    *   JSON structure: `{\"answer\": \"...\", \"refused\": false}`\n\n    *   Check against constraints:\n        *   Only use provided documentation? Yes.\n        *   Refuse if unsupported? Answer is supported.\n        *   Return valid JSON? Yes.\n        *   Exact keys? `answer`, `refused`.\n        *   Compact inline citations? Yes.\n\n    *   Refinement on citation format: The prompt says `[CONTRIBUTING.md#3]`. The source IDs are `chunk_id=11`, `chunk_id=10`, etc. I will use the filename and chunk_id.\n\n    *   Final answer construction:\n        \"To start the frontend server for\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='umfcapfKFbn9v_gP5J6PmQ0' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=997,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=997\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1506\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 11
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 10
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 12
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 11,
+            "text": "older and reload the app if changes are made. By default, Gradio will launch on port 7860. You can also just use `python app.py`, but this won't automatically trigger updates. \n\nNote: if you have `gradio` installed elsewhere in your system, you may need to uninstall it or at least make sure your `PYTHONPATH` includes the directory where the Gradio repository is cloned, e.g.,\n`export PYTHONPATH=\"./\"`\n\n\nIf you're making frontend changes, start the frontend server:\n\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/run_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\nThis will open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also",
+            "score": 0.7726
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 10,
+            "text": "s the HTML/JS/CSS source code for the library, including the fronted code for each component in a separate directory\n  - `/js/_website`: contains the code for the Gradio website (www.gradio.app). See the README in the `/js/_website` folder for more details\n- `/guides`: the written guides and tutorials that are found on Gradio's website.\n\n## 🚀 Run a Gradio app\n\nYou can get started by creating an `app.py` file in the root:\n\n```py\nimport gradio as gr\n\nwith gr.Blocks() as demo:\n   gr.Button()\n    \nif __name__ == \"__main__\":\n   demo.launch()\n```\n\nthen run:\n\n```\ngradio app.py\n```\n\nThis will start the backend server in reload mode, which will watch for changes in the `gradio` folder and reload the app if changes are made. By default, Gradio will launch on port 7860. You can also just use `python",
+            "score": 0.7377
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 12,
+            "text": "ompletely custom frontend using only Gradio's backend (queue, streaming, MCP, ZeroGPU, and Spaces hosting included).\n\n## What's Next?\n\nKeep learning about Gradio sequentially using the Gradio Guides, which include explanations as well as example code and embedded interactive demos. Next up: [let's dive deeper into the Interface class](https://www.gradio.app/guides/the-interface-class).\n\nOr, if you already know the basics and are looking for something specific, you can search the more [technical API documentation](https://www.gradio.app/docs/).",
+            "score": 0.6498
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12,
+            "text": "ill open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also reload automatically in the browser. For more information about developing in the frontend, you can refer to [js/README.md](js/README.md).\n\nWe also have demos of all our components in the `/gradio/demo` directory. To get our simple gradio Chatbot running locally:\n\n```\ngradio demo/chatbot_simple/run.py\n```\n\n\n## 🧪 Testing\n\nWe use Pytest, Playwright and Vitest to test our code. \n\n- The Python tests are located in `/test`. To run these tests:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/run_backend_tests.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_backend_tests.bat\n```\n  </td>\n  </tr>\n</table>\n\n- The frontend unit",
+            "score": 0.6298
+          }
+        ],
+        "refused": false,
+        "latency_s": 13.2365
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "WRONG",
+        "reason": "The response is truncated and does not provide the command or the port."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q10",
+        "question": "How can I run a simple Gradio app in reload mode, and what backend port is used by default?",
+        "expected_answer": "Create `app.py` with a Blocks demo and run `gradio app.py`; the backend uses port 7860 by default.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "local setup"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   User Question: \"How can I run a simple Gradio app in reload mode, and what backend port is used by default?\"\n    *   Constraint 1: Use only the provided documentation passages.\n    *   Constraint 2: If not supported or unrelated, refuse.\n    *   Constraint 3: Return valid JSON with `answer` (string) and `refused` (boolean).\n    *   Constraint 4: Use compact inline citations like `[CONTRIBUTING.md#3]`.\n    *   Constraint 5: If refusing, answer briefly that the question is outside the indexed guide.\n\n    *   *Chunk 10 (CONTRIBUTING.md):* Mentions running an app with `gradio app.py` to start the backend server in reload mode. Mentions \"By default, Gradio will launch on port 7860.\"\n    *   *Chunk 11 (CONTRIBUTING.md):* Confirms \"By default, Gradio will launch on port 7860.\"\n    *   *Chunk 3 (quickstart.md):* Explains how to run in \"hot reload mode\" by typing `gradio` before the filename (e.g., `gradio app.py`).\n    *   *Chunk 12 (CONTRIBUTING.md):* Mentions frontend server defaults to port 9876.\n\n    *   *Part 1: How to run in reload mode?*\n        *   Create an `app.py` file [CONTRIBUTING.md#10].\n        *   Run `gradio app.py` in the terminal [CONTRIBUTING.md#10, quickstart.md#3].\n        *   This starts the backend server in reload mode, watching for changes in the `gradio` folder [CONTRIBUTING.md#10].\n\n    *   *Part 2: What backend port is used by default?*\n        *   Port 7860 [CONTRIBUTING.md#10, CONTRIBUTING.md#11].\n\n    *   To run a Gradio app in reload mode, create an `app.py` file and run `gradio app.py` in your terminal [CONTRIBUTING.md#10, quickstart.md#3]. This starts the backend server in reload mode\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='1WfcaregDOHB694P56egqQY' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=1067,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=1067\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1576\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 10
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 11
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 10,
+            "text": "s the HTML/JS/CSS source code for the library, including the fronted code for each component in a separate directory\n  - `/js/_website`: contains the code for the Gradio website (www.gradio.app). See the README in the `/js/_website` folder for more details\n- `/guides`: the written guides and tutorials that are found on Gradio's website.\n\n## 🚀 Run a Gradio app\n\nYou can get started by creating an `app.py` file in the root:\n\n```py\nimport gradio as gr\n\nwith gr.Blocks() as demo:\n   gr.Button()\n    \nif __name__ == \"__main__\":\n   demo.launch()\n```\n\nthen run:\n\n```\ngradio app.py\n```\n\nThis will start the backend server in reload mode, which will watch for changes in the `gradio` folder and reload the app if changes are made. By default, Gradio will launch on port 7860. You can also just use `python",
+            "score": 0.7874
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 11,
+            "text": "older and reload the app if changes are made. By default, Gradio will launch on port 7860. You can also just use `python app.py`, but this won't automatically trigger updates. \n\nNote: if you have `gradio` installed elsewhere in your system, you may need to uninstall it or at least make sure your `PYTHONPATH` includes the directory where the Gradio repository is cloned, e.g.,\n`export PYTHONPATH=\"./\"`\n\n\nIf you're making frontend changes, start the frontend server:\n\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/run_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\nThis will open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also",
+            "score": 0.7021
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 3,
+            "text": "you can run your Gradio app in <strong>hot reload mode</strong>, which automatically reloads the Gradio app whenever you make changes to the file. To do this, simply type in <code>gradio</code> before the name of the file instead of <code>python</code>. In the example above, you would type: `gradio app.py` in your terminal. You can also enable <strong>vibe mode</strong> by using the <code>--vibe</code> flag, e.g. <code>gradio --vibe app.py</code>, which provides an in-browser chat that can be used to write or edit your Gradio app using natural language. Learn more in the <a href=\"https://www.gradio.app/guides/developing-faster-with-reload-mode\">Hot Reloading Guide</a>.\n\n\n**Understanding the `Interface` Class**\n\nYou'll notice that in order to make your first demo, you created an instance",
+            "score": 0.6621
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12,
+            "text": "ill open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also reload automatically in the browser. For more information about developing in the frontend, you can refer to [js/README.md](js/README.md).\n\nWe also have demos of all our components in the `/gradio/demo` directory. To get our simple gradio Chatbot running locally:\n\n```\ngradio demo/chatbot_simple/run.py\n```\n\n\n## 🧪 Testing\n\nWe use Pytest, Playwright and Vitest to test our code. \n\n- The Python tests are located in `/test`. To run these tests:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/run_backend_tests.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_backend_tests.bat\n```\n  </td>\n  </tr>\n</table>\n\n- The frontend unit",
+            "score": 0.6209
+          }
+        ],
+        "refused": false,
+        "latency_s": 12.5179
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "PARTIAL",
+        "reason": "The candidate answer fails to provide the default backend port because the response was cut off."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q11",
+        "question": "Where are Gradio's Python unit tests located?",
+        "expected_answer": "In the repository's `/test` directory.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "repository structure"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   Role: Open-source contributor guide assistant.\n    *   Task: Answer the user's question using *only* the provided documentation passages.\n    *   Constraints:\n        *   If unsupported or unrelated, refuse.\n        *   Return valid JSON only: `{\"answer\": \"string\", \"refused\": boolean}`.\n        *   Use compact inline citations (e.g., `[CONTRIBUTING.md#3]`).\n        *   Refusal answer: \"the question is outside the indexed guide\".\n    *   Question: \"Where are Gradio's Python unit tests located?\"\n\n    *   `gradio/CONTRIBUTING.md [chunk_id=12]`: Mentions \"The Python tests are located in `/test`.\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=9]`: Mentions \"`/test`: contains Python unit tests for the library\".\n    *   `gradio/CONTRIBUTING.md [chunk_id=25]`: Discusses PYTHONPATH.\n    *   `gradio/CONTRIBUTING.md [chunk_id=13]`: Discusses frontend and browser tests.\n\n    *   Question: \"Where are Gradio's Python unit tests located?\"\n    *   Answer: They are located in the `/test` directory [CONTRIBUTING.md#12, CONTRIBUTING.md#9].\n\n    *   `answer`: \"The Python unit tests for the library are located in the `/test` directory [CONTRIBUTING.md#12, CONTRIBUTING.md#9].\"\n    *   `refused`: `false`.\n\n    *   The prompt asks for `[CONTRIBUTING.md#3]` style. My chunk IDs are 12 and 9.\n    *   Wait, the prompt says `[CONTRIBUTING.md#3]`. In the source, `chunk_id=12` is the identifier. I should use the chunk ID provided in the source.\n    *   Passage 12 says: \"The Python tests are located in `/test`.\"\n    *   Passage 9 says: \"`/test`: contains Python unit tests for the library\".\n\n    *   `answer`: \"The Python unit tests for the library are located in the `/test` directory [CONTRIBUTING.md#\"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='8Gfcapf7BO_c4t4P16GjAQ' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=919,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=919\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1428\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 9
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 25
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 13
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12,
+            "text": "ill open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also reload automatically in the browser. For more information about developing in the frontend, you can refer to [js/README.md](js/README.md).\n\nWe also have demos of all our components in the `/gradio/demo` directory. To get our simple gradio Chatbot running locally:\n\n```\ngradio demo/chatbot_simple/run.py\n```\n\n\n## 🧪 Testing\n\nWe use Pytest, Playwright and Vitest to test our code. \n\n- The Python tests are located in `/test`. To run these tests:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/run_backend_tests.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_backend_tests.bat\n```\n  </td>\n  </tr>\n</table>\n\n- The frontend unit",
+            "score": 0.7007
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 9,
+            "text": "om/docs/devcontainers/tutorial).\n\n## 🧱 Structure of the Repository\n\nIf you're a newcomer to Gradio, we recommend getting familiar with the overall structure of the repository so that you can focus on the part of the source code you'd like to contribute to.\n\n- `/gradio`: contains the Python source code for the library\n  - `/gradio/interface.py`: contains the Python source code for the core `Interface` class\n  - `/gradio/blocks.py`: contains the Python source code for the core `Blocks` class\n  - `/gradio/components/`: the directory that contains the Python source code for all of the Gradio components.\n- `/test`: contains Python unit tests for the library\n- `/js`: contains the HTML/JS/CSS source code for the library, including the fronted code for each component in a separate directory\n  -",
+            "score": 0.6094
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 25,
+            "text": "lease upgrade.`\n\nensure your `PYTHONPATH` includes the directory where the Gradio repository is cloned, e.g.:\n\n```export PYTHONPATH=\"./\"```\n\nThis ensures that when `gradio` is imported in a python program, it is this current version from this repository.\n\n---\n\n_Could these guidelines be clearer? Feel free to open a PR to help us facilitate open-source contributions!_",
+            "score": 0.545
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 13,
+            "text": "d_tests.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_backend_tests.bat\n```\n  </td>\n  </tr>\n</table>\n\n- The frontend unit tests are any defined with the filename `*.test.ts`. To run them:\n\n```\npnpm test\n```\n\n- Browser tests are located in `js/spa/test` and are defined as `*spec.ts` files.\n\nTo install browser test dependencies:\n\n```\npnpm exec playwright install chromium firefox\npnpm exec playwright install-deps chromium firefox\npnpm --filter @gradio/utils --filter @gradio/theme package\n```\n\nTo run browser tests:\n\n```\npnpm test:browser\n```\n\nTo build the frontend code before running browser tests:\n\n```\npnpm test:browser:full\n```\n\nYou can also run browser tests in the UI mode by adding the `--ui` flag: \n\n```\npnpm test:browser --ui\n```\n\nIf you have made any significant visual changes to a",
+            "score": 0.5156
+          }
+        ],
+        "refused": false,
+        "latency_s": 12.8137
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q12",
+        "question": "Which test tools does Gradio use?",
+        "expected_answer": "Pytest, Playwright, and Vitest.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "testing"
+      },
+      "response": {
+        "answer": "sdk_http_response=HttpResponse(\n  headers=<dict len=12>\n) candidates=[Candidate(\n  content=Content(\n    parts=[\n      Part(\n        text=\"\"\"*   User Role: Open-source contributor guide assistant.\n    *   Task: Answer the user's question using *only* the provided documentation passages.\n    *   Constraints:\n        *   Use only provided passages.\n        *   If unsupported or unrelated, refuse.\n        *   Return valid JSON with `answer` (string) and `refused` (boolean).\n        *   Include compact inline citations (e.g., `[CONTRIBUTING.md#3]`).\n        *   For refusal, brief answer stating it's outside the guide.\n    *   User Question: \"Which test tools does Gradio use?\"\n\n    *   `gradio/CONTRIBUTING.md [chunk_id=12]`: Mention of testing. \"We use Pytest, Playwright and Vitest to test our code.\"\n    *   `gradio/CONTRIBUTING.md [chunk_id=3]`: Bug reports and feature requests.\n    *   `gradio/guides/sharing-your-app.md [chunk_id=34]`: MCP servers and OAuth examples.\n    *   `gradio/guides/quickstart.md [chunk_id=8]`: Sharing demos and `gr.Blocks`.\n\n    *   The question asks for test tools.\n    *   `gradio/CONTRIBUTING.md [chunk_id=12]` explicitly states: \"We use Pytest, Playwright and Vitest to test our code.\"\n\n    *   `answer`: \"Gradio uses Pytest, Playwright, and Vitest to test its code [CONTRIBUTING.md#12].\"\n    *   `refused`: `false`.\n\n    *   JSON format? Yes.\n    *   Only documentation used? Yes.\n    *   Compact inline citations? Yes.\n    *   Refusal logic? Not needed as it's answered.\n\n    Note: The chunk ID for `CONTRIBUTING.md` is 12. The prompt says `[CONTRIBUTING.md#3]` style. I will use `[CONTRIBUTING.md#12]`.\n\n    Wait, the prompt example is `[CONTRIBUTING.md#3]`. The chunk ID provided in the source is `12`. So I will use `[CONTRIBUTING.md#12]`.\n\n    \"\"\",\n        thought=True\n      ),\n    ],\n    role='model'\n  ),\n  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,\n  index=0\n)] create_time=None model_version='gemma-4-26b-a4b-it' prompt_feedback=None response_id='_mfcavDVMZyF694Pg72-qAE' usage_metadata=GenerateContentResponseUsageMetadata(\n  prompt_token_count=1016,\n  prompt_tokens_details=[\n    ModalityTokenCount(\n      modality=<MediaModality.TEXT: 'TEXT'>,\n      token_count=1016\n    ),\n  ],\n  thoughts_token_count=509,\n  total_token_count=1525\n) model_status=None automatic_function_calling_history=[] parsed=None",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/guides/sharing-your-app.md",
+            "chunk_id": 34
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 8
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12,
+            "text": "ill open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also reload automatically in the browser. For more information about developing in the frontend, you can refer to [js/README.md](js/README.md).\n\nWe also have demos of all our components in the `/gradio/demo` directory. To get our simple gradio Chatbot running locally:\n\n```\ngradio demo/chatbot_simple/run.py\n```\n\n\n## 🧪 Testing\n\nWe use Pytest, Playwright and Vitest to test our code. \n\n- The Python tests are located in `/test`. To run these tests:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/run_backend_tests.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_backend_tests.bat\n```\n  </td>\n  </tr>\n</table>\n\n- The frontend unit",
+            "score": 0.6618
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 3,
+            "text": "__`), Python version, operating system, and browser (for frontend issues).\n6. **Screenshots, screen recordings, or error tracebacks** where relevant.\n\nThe smaller and more self-contained the reproduction, the faster we can fix it.\n\n[#10568](https://github.com/gradio-app/gradio/issues/10568) is a good example of a bug report to follow.\n\n### ✨ Requesting a feature\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title.**\n2. **The problem or use case** you're trying to solve — what are you trying to build, and where does Gradio fall short today?\n3. **A detailed description of the feature** you'd like, including a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible —",
+            "score": 0.6267
+          },
+          {
+            "file": "gradio/guides/sharing-your-app.md",
+            "chunk_id": 34,
+            "text": "uvicorn.run(app)\n```\n\nThere are actually two separate Gradio apps in this example! One that simply displays a log in button (this demo is accessible to any user), while the other main demo is only accessible to users that are logged in. You can try this example out on [this Space](https://huggingface.co/spaces/gradio/oauth-example).\n\n## MCP Servers\n\nGradio apps can function as MCP (Model Context Protocol) servers, allowing LLMs to use your app's functions as tools. By simply setting `mcp_server=True` in the `.launch()` method, Gradio automatically converts your app's functions into MCP tools that can be called by MCP clients like Claude Desktop, Cursor, or Cline. The server exposes tools based on your function names, docstrings, and type hints, and can handle file uploads,",
+            "score": 0.6252
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 8,
+            "text": "something like:\n\n👉 &nbsp; `https://a23dsf231adb.gradio.live`\n\nNow, anyone around the world can try your Gradio demo from their browser, while the machine learning model and all computation continues to run locally on your computer.\n\nTo learn more about sharing your demo, read our dedicated guide on [sharing your Gradio application](https://www.gradio.app/guides/sharing-your-app).\n\n\n## An Overview of Gradio\n\nSo far, we've been discussing the `Interface` class, which is a high-level class that lets you build demos quickly with Gradio. But what else does Gradio include?\n\n### Custom Demos with `gr.Blocks`\n\nGradio offers a low-level approach for designing web apps with more customizable layouts and data flows with the `gr.Blocks` class. Blocks supports things like controlling where components",
+            "score": 0.6002
+          }
+        ],
+        "refused": false,
+        "latency_s": 12.9152
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "WRONG",
+        "reason": "The response is a raw system/API log dump rather than a functional answer to the question."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q13",
+        "question": "What command runs Gradio's Python backend tests on macOS or Linux?",
+        "expected_answer": "Run `bash scripts/run_backend_tests.sh`.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "testing"
+      },
+      "response": {
+        "answer": "To run the Python tests on MacOS / Linux, use the command `bash scripts/run_backend_tests.sh` [CONTRIBUTING.md#12].",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 6
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 7
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 11
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 12,
+            "text": "ill open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also reload automatically in the browser. For more information about developing in the frontend, you can refer to [js/README.md](js/README.md).\n\nWe also have demos of all our components in the `/gradio/demo` directory. To get our simple gradio Chatbot running locally:\n\n```\ngradio demo/chatbot_simple/run.py\n```\n\n\n## 🧪 Testing\n\nWe use Pytest, Playwright and Vitest to test our code. \n\n- The Python tests are located in `/test`. To run these tests:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/run_backend_tests.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_backend_tests.bat\n```\n  </td>\n  </tr>\n</table>\n\n- The frontend unit",
+            "score": 0.7541
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 6,
+            "text": "ges to the frontend and would like to preview them)\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/run_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\n-  Install test requirements (only required if you want to run tests locally)\n\n(Note that it is highly recommended to use a virtual environment running **Python 3.10** since the versions of Gradio's dependencies are pinned)\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/install_test_requirements.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\install_test_requirements.bat\n```\n  </td>\n  </tr>\n</table>\n\nIf you have a different Python version and conflicting packages during the installation,",
+            "score": 0.7436
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 7,
+            "text": "t\n```\n  </td>\n  </tr>\n</table>\n\nIf you have a different Python version and conflicting packages during the installation, please first run:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/create_test_requirements.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\create_test_requirements.bat\n```\n  </td>\n  </tr>\n</table>\n\n\n### 📦 Using dev containers\n\nInstead of installing Gradio locally, you can alternatively use dev containers. This is supported on all platforms (macOS/Windows/Linux), as well as on GitHub Codespaces. \n\nPrerequisites:\n\n- An editor which supports dev containers, like VS Code\n- Docker support on the host computer:\n  - macOS: [Docker Desktop 2.0+](https://www.docker.com/products/docker-desktop/)\n  - Windows: [Docker Desktop",
+            "score": 0.6825
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 11,
+            "text": "older and reload the app if changes are made. By default, Gradio will launch on port 7860. You can also just use `python app.py`, but this won't automatically trigger updates. \n\nNote: if you have `gradio` installed elsewhere in your system, you may need to uninstall it or at least make sure your `PYTHONPATH` includes the directory where the Gradio repository is cloned, e.g.,\n`export PYTHONPATH=\"./\"`\n\n\nIf you're making frontend changes, start the frontend server:\n\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```bash\nbash scripts/run_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\run_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\nThis will open a separate browser tab. By default, Gradio will launch this on port 9876. Any changes to the frontend will also",
+            "score": 0.6446
+          }
+        ],
+        "refused": false,
+        "latency_s": 11.3048
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "CORRECT",
+        "reason": "The candidate answer provides the exact command specified in the ground truth."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q14",
+        "question": "Against which branch should Gradio pull requests be submitted, and what should they ideally address?",
+        "expected_answer": "Submit them against `main`; ideally they address an open issue unless the change is small.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "PR process"
+      },
+      "response": {
+        "answer": "All PRs should be submitted against `main`, and ideally should address an open issue, unless the change is small [CONTRIBUTING.md#20].",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 20
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 0
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 20,
+            "text": "en't been included in a release yet, they will only be visible there. \n\n## 📮 Submitting PRs\n\nAll PRs should be submitted against `main`, and ideally should address an open issue, unless the change is small. Direct commits to main are blocked, and PRs require an approving review to merge into main. By convention, the Gradio maintainers will review PRs when:\n\n- An initial review has been requested\n- A clear, descriptive title has been assigned to the PR\n- A maintainer (@abidlabs, @aliabid94, @aliabd, @AK391, @dawoodkhan82, @pngwn, @freddyaboulton, @hannahblair, @hysts, @whitphx) is tagged in the PR comments and asked to complete a review\n\n 🧹 We ask that you make sure initial CI checks are passing before requesting a review. One of the Gradio maintainers will merge the PR when all the checks",
+            "score": 0.6775
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 0,
+            "text": "# Contributing to Gradio\n\n![GitHub issues by-label](https://img.shields.io/github/issues/gradio-app/gradio/good%20first%20issue?color=fe7c01&link=https%3A%2F%2Fgithub.com%2Fgradio-app%2Fgradio%2Fissues%3Fq%3Dis%253Aopen%2Bis%253Aissue%2Blabel%253A%2522good%2Bfirst%2Bissue%2522)\n\n\nMore than 300 awesome developers have contributed to the `gradio` library, and the best way to help us today is by **opening a detailed issue** rather than a pull request.\n\n## 📝 The best way to contribute: open a great issue\n\nWe have **paused accepting pull requests from outside the Gradio maintainer team.** As AI coding agents have become widespread, the volume of community PRs has grown to the point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at",
+            "score": 0.6321
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4,
+            "text": "ncluding a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible — a link to a small repro/demo, a sketch, or a screenshot of a similar feature elsewhere helps us understand the request quickly.\n5. **Alternatives you've considered**, including any workarounds you're currently using.\n\nDetailed feature requests directly shape our roadmap and help us prioritize what to build next.\n\n[#12519](https://github.com/gradio-app/gradio/issues/12519) is a good example of a feature request issue to follow.\n\n## 🏡 Setup Gradio locally\n\n> The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed",
+            "score": 0.5445
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.5122
+          }
+        ],
+        "refused": false,
+        "latency_s": 12.5223
+      },
+      "citation_hit": true,
+      "refusal_correct": true,
+      "judge": {
+        "label": "CORRECT",
+        "reason": "The candidate answer accurately covers all facts provided in the ground truth."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q15",
+        "question": "What must be true before requesting a Gradio PR review, and which checks can be ignored?",
+        "expected_answer": "Initial CI checks should be passing; Vercel and Spaces checks can be ignored because they only run under maintainer pull requests.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "PR process"
+      },
+      "response": {
+        "answer": "I couldn't reach Gemma safely right now: Gemma request failed: [Errno 11001] getaddrinfo failed",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 20
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 21
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 20,
+            "text": "en't been included in a release yet, they will only be visible there. \n\n## 📮 Submitting PRs\n\nAll PRs should be submitted against `main`, and ideally should address an open issue, unless the change is small. Direct commits to main are blocked, and PRs require an approving review to merge into main. By convention, the Gradio maintainers will review PRs when:\n\n- An initial review has been requested\n- A clear, descriptive title has been assigned to the PR\n- A maintainer (@abidlabs, @aliabid94, @aliabd, @AK391, @dawoodkhan82, @pngwn, @freddyaboulton, @hannahblair, @hysts, @whitphx) is tagged in the PR comments and asked to complete a review\n\n 🧹 We ask that you make sure initial CI checks are passing before requesting a review. One of the Gradio maintainers will merge the PR when all the checks",
+            "score": 0.7977
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 21,
+            "text": "al CI checks are passing before requesting a review. One of the Gradio maintainers will merge the PR when all the checks are passing.  You can safely ignore the Vercel and Spaces checks, which only run under maintainers' pull requests.  \n\nDon't forget to format your code before pushing:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/format_backend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\format_backend.bat\n```\n  </td>\n  </tr>\n</table>\n\nAnd if you made changes to the frontend: \n\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/format_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\format_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\nThank you for taking the time to contribute to Gradio!",
+            "score": 0.6178
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.6059
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 4,
+            "text": "ncluding a proposed API or example of how you imagine it would be used in code.\n4. **A demo or mockup** where possible — a link to a small repro/demo, a sketch, or a screenshot of a similar feature elsewhere helps us understand the request quickly.\n5. **Alternatives you've considered**, including any workarounds you're currently using.\n\nDetailed feature requests directly shape our roadmap and help us prioritize what to build next.\n\n[#12519](https://github.com/gradio-app/gradio/issues/12519) is a good example of a feature request issue to follow.\n\n## 🏡 Setup Gradio locally\n\n> The following sections (local setup, structure, testing, and submitting PRs) are primarily for the Gradio maintainer team. If you're an outside contributor, the most helpful thing you can do is [open a detailed",
+            "score": 0.4897
+          }
+        ],
+        "refused": true,
+        "latency_s": 1488.3417
+      },
+      "citation_hit": true,
+      "refusal_correct": false,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "[Errno 11001] getaddrinfo failed"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q16",
+        "question": "Which command formats Gradio backend code before pushing?",
+        "expected_answer": "Run `bash scripts/format_backend.sh` on macOS or Linux.",
+        "expected_source": "gradio/CONTRIBUTING.md",
+        "category": "coding style"
+      },
+      "response": {
+        "answer": "I couldn't reach Gemma safely right now: Gemma request failed: [Errno 11001] getaddrinfo failed",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 21
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 12
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 17
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 10
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 21,
+            "text": "al CI checks are passing before requesting a review. One of the Gradio maintainers will merge the PR when all the checks are passing.  You can safely ignore the Vercel and Spaces checks, which only run under maintainers' pull requests.  \n\nDon't forget to format your code before pushing:\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/format_backend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\format_backend.bat\n```\n  </td>\n  </tr>\n</table>\n\nAnd if you made changes to the frontend: \n\n\n<table>\n  <tr>\n  <th>MacOS / Linux</th>\n  <th>Windows</th>\n  </tr>\n  <tr>\n  <td>\n\n```\nbash scripts/format_frontend.sh\n```\n  </td>\n  <td>\n  \n```bash\nscripts\\format_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\nThank you for taking the time to contribute to Gradio!",
+            "score": 0.6609
+          },
+          {
+            "file": "gradio/guides/quickstart.md",
+            "chunk_id": 12,
+            "text": "ompletely custom frontend using only Gradio's backend (queue, streaming, MCP, ZeroGPU, and Spaces hosting included).\n\n## What's Next?\n\nKeep learning about Gradio sequentially using the Gradio Guides, which include explanations as well as example code and embedded interactive demos. Next up: [let's dive deeper into the Interface class](https://www.gradio.app/guides/the-interface-class).\n\nOr, if you already know the basics and are looking for something specific, you can search the more [technical API documentation](https://www.gradio.app/docs/).",
+            "score": 0.5924
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 17,
+            "text": "d any class or function in the source code will make its docstrings available in the templates. \n\nHere's an example: the template for [Image docs](https://www.gradio.app/docs/gradio/image) is [here](https://github.com/gradio-app/gradio/blob/main/js/_website/src/lib/templates/gradio/03_components/image.svx). You can see the initialization section references `obj.parameters`. So to edit the description of a parameter you'll have to edit the docstring in the [source code](https://github.com/gradio-app/gradio/blob/main/gradio/components/image.py). But the page also includes a section titled 'GIF and SVG Image Formats' which is written in plain markdown and can be edited directly on the template. \n\nIf you are making changes to docstrings and want to see them on the website you have to make",
+            "score": 0.5851
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 10,
+            "text": "s the HTML/JS/CSS source code for the library, including the fronted code for each component in a separate directory\n  - `/js/_website`: contains the code for the Gradio website (www.gradio.app). See the README in the `/js/_website` folder for more details\n- `/guides`: the written guides and tutorials that are found on Gradio's website.\n\n## 🚀 Run a Gradio app\n\nYou can get started by creating an `app.py` file in the root:\n\n```py\nimport gradio as gr\n\nwith gr.Blocks() as demo:\n   gr.Button()\n    \nif __name__ == \"__main__\":\n   demo.launch()\n```\n\nthen run:\n\n```\ngradio app.py\n```\n\nThis will start the backend server in reload mode, which will watch for changes in the `gradio` folder and reload the app if changes are made. By default, Gradio will launch on port 7860. You can also just use `python",
+            "score": 0.5678
+          }
+        ],
+        "refused": true,
+        "latency_s": 8.5615
+      },
+      "citation_hit": true,
+      "refusal_correct": false,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "[Errno 11001] getaddrinfo failed"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q17",
+        "question": "Name three behaviors that contribute to a positive Gradio community environment.",
+        "expected_answer": "Examples include empathy and kindness, respect for differing viewpoints, and giving and accepting constructive feedback.",
+        "expected_source": "gradio/CODE_OF_CONDUCT.md",
+        "category": "code of conduct"
+      },
+      "response": {
+        "answer": "I couldn't reach Gemma safely right now: Gemma request failed: [Errno 11001] getaddrinfo failed",
+        "sources": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 0
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 0
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 22
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 0,
+            "text": "# Contributing to Gradio\n\n![GitHub issues by-label](https://img.shields.io/github/issues/gradio-app/gradio/good%20first%20issue?color=fe7c01&link=https%3A%2F%2Fgithub.com%2Fgradio-app%2Fgradio%2Fissues%3Fq%3Dis%253Aopen%2Bis%253Aissue%2Blabel%253A%2522good%2Bfirst%2Bissue%2522)\n\n\nMore than 300 awesome developers have contributed to the `gradio` library, and the best way to help us today is by **opening a detailed issue** rather than a pull request.\n\n## 📝 The best way to contribute: open a great issue\n\nWe have **paused accepting pull requests from outside the Gradio maintainer team.** As AI coding agents have become widespread, the volume of community PRs has grown to the point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at",
+            "score": 0.5588
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 0,
+            "text": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, caste, color, religion, or sexual\nidentity and orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions,",
+            "score": 0.5524
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 22,
+            "text": "`bash\nscripts\\format_frontend.bat\n```\n  </td>\n  </tr>\n</table>\n\nThank you for taking the time to contribute to Gradio! \n\n\n## ❓ Need help or have questions?\n\n- [Open a detailed issue](https://github.com/gradio-app/gradio/issues/new/choose) for a bug or feature request — see the [guidelines above](#-the-best-way-to-contribute-open-a-great-issue).\n- Ask the Gradio community in our [Discord](https://discord.com/invite/feTf9x3ZSB).\n- Browse existing [issues](https://github.com/gradio-app/gradio/issues) to see if your problem has already been reported (and add a 👍 or extra reproduction details if so).\n\n## 🚧 Troubleshooting\n`ERROR: Error loading ASGI app. Could not import module \"<filename>\"`\n\nVerify that you've used the correct filename of your gradio app, and that you're in the directory of",
+            "score": 0.4823
+          },
+          {
+            "file": "gradio/CONTRIBUTING.md",
+            "chunk_id": 1,
+            "text": "point where reviewing them carefully takes more maintainer time than the alternative: pointing our own coding agents at a well-described issue and solving it ourselves.\n\nSo the single most valuable thing you can do is **file a clear, detailed, reproducible issue.** A great issue lets us (and our agents) understand and fix the problem quickly, and it helps us prioritize what to work on next for Gradio.\n\n> If you are a member of the Gradio maintainer team, the local setup, testing, and PR sections further down still apply to you.\n\n### 🐛 Reporting a bug\n\nPlease [open an issue](https://github.com/gradio-app/gradio/issues/new/choose) and include:\n\n1. **A clear, descriptive title** that summarizes the problem.\n2. **What you expected to happen** vs. **what actually happened.**\n3. **Step-by-step",
+            "score": 0.4689
+          }
+        ],
+        "refused": true,
+        "latency_s": 7.8067
+      },
+      "citation_hit": true,
+      "refusal_correct": false,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "[Errno 11001] getaddrinfo failed"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q18",
+        "question": "Give two examples of unacceptable behavior under Gradio's Code of Conduct.",
+        "expected_answer": "Examples include harassment and publishing another person's private information without explicit permission; trolling, insults, and personal attacks are also unacceptable.",
+        "expected_source": "gradio/CODE_OF_CONDUCT.md",
+        "category": "code of conduct"
+      },
+      "response": {
+        "answer": "I couldn't reach Gemma safely right now: Gemma request failed: [Errno 11001] getaddrinfo failed",
+        "sources": [
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 3
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 1
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 4
+          }
+        ],
+        "passages": [
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 3,
+            "text": "municate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies when\nan individual is officially representing the community in public spaces.\nExamples of representing our community include using an official email address,\nposting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at\n[Discord], or at our [Email].\nAll complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n##",
+            "score": 0.5898
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 1,
+            "text": "r\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Focusing on what is best not just for us as individuals, but for the overall\n  community\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or advances of\n  any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email address,\n  without their explicit permission\n* Other conduct which could",
+            "score": 0.5725
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 2,
+            "text": "rivate information, such as a physical or email address,\n  without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards of\nacceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community",
+            "score": 0.4745
+          },
+          {
+            "file": "gradio/CODE_OF_CONDUCT.md",
+            "chunk_id": 4,
+            "text": "nd fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series of\nactions.\n\n**Consequence**: A warning with",
+            "score": 0.4714
+          }
+        ],
+        "refused": true,
+        "latency_s": 7.7497
+      },
+      "citation_hit": true,
+      "refusal_correct": false,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "[Errno 11001] getaddrinfo failed"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q19",
+        "question": "What link states does REsq Mesh classify, and what does it use for that classifier?",
+        "expected_answer": "It classifies links as HEALTHY, DEGRADING, or CRITICAL using a fully INT8 TensorFlow Lite model.",
+        "expected_source": "resqmesh/README.md",
+        "category": "ResQMesh"
+      },
+      "response": {
+        "answer": "I couldn't reach Gemma safely right now: Gemma request failed: [Errno 11001] getaddrinfo failed",
+        "sources": [
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 44
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 14
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 18
+          }
+        ],
+        "passages": [
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 44,
+            "text": "before you redistribute them.\n\nNot a medical device. REsq Mesh is a research and demonstration system. The MIT warranty disclaimer applies, and clinicians must review every recommendation. Do not use it as the only basis for patient care.\n\n---\n\n<div align=\"center\">\n\n**REsq Mesh** · Team Izanagi · The server can fail. The care does not stop.\n\n</div>",
+            "score": 0.6448
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 14,
+            "text": "patient who cannot speak or move may be unable to call for help.\n\nAn AI assistant makes this harder, not easier, unless people can see what produced its advice and check that the data behind it is intact. REsq Mesh is built around that requirement.\n\n## Key capabilities\n\n| Capability | What it does | Where it lives |\n|---|---|---|\n| Link failure prediction | Classifies link state as `HEALTHY`, `DEGRADING`, or `CRITICAL` with a fully INT8 TensorFlow Lite model | `ml/nirantara_network/`, `firmware/nxp_mcxn236/` |\n| Dual-port failover | Moves traffic `PORT_A_ACTIVE` → `PORT_B_ACTIVE` → `MESH_ACTIVE` using an 8-dimension sliding-window state machine | `core/failover/` |\n| Eye-signal commands | Filters EOG signals (4th-order Butterworth, 0.1–10 Hz) and detects `CALL_NURSE`, `PAIN`, `WATER`,",
+            "score": 0.5147
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 2,
+            "text": "architecture](#system-architecture)\n5. [Open-source AI in the system](#open-source-ai-in-the-system)\n6. [How the AI can be verified](#how-the-ai-can-be-verified)\n7. [Edge AI on the NXP FRDM-MCXN236](#edge-ai-on-the-nxp-frdm-mcxn236)\n8. [Modules in detail](#modules-in-detail)\n9. [Dashboard](#dashboard)\n10. [API reference](#api-reference)\n11. [Quickstart](#quickstart)\n12. [Configuration](#configuration)\n13. [Testing](#testing)\n14. [Repository layout](#repository-layout)\n15. [Current limitations](#current-limitations)\n16. [Contributing](#contributing)\n17. [License](#license)\n\n---\n\n## Overview\n\nREsq Mesh is a clinical triage and telemetry stack for places where the network cannot be trusted: hospitals under a cyber attack, field hospitals after a disaster, and remote care sites with weak",
+            "score": 0.4656
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 18,
+            "text": "ERGE\n    FO --> DASH\n    MERGE --> TRI\n    TRI --> LLM\n    TRI -.->|\"model offline\"| RULES\n    MERGE --> CDC\n    TRI --> DASH\n    MERGE --> DASH\n```\n\n**Data path in one sentence:** sensors and field nodes produce signed case capsules, the merge engine verifies and combines them, the triage engine ranks and plans using a local open-weight model, and the dashboard shows the result with its source and verification status.\n\n## Open-source AI in the system\n\nREsq Mesh runs its AI locally. Patient data does not leave the device, and the system works with no internet connection.\n\n| Component | Model or tool | Role | Licence |\n|---|---|---|---|\n| Triage plan and incident timeline | **Llama 3.2 3B** (`llama3.2:3b`) served by **Ollama** | Writes strict-JSON triage output and a three-point timeline",
+            "score": 0.3936
+          }
+        ],
+        "refused": true,
+        "latency_s": 7.7129
+      },
+      "citation_hit": true,
+      "refusal_correct": false,
+      "judge": {
+        "label": "UNAVAILABLE",
+        "reason": "[Errno 11001] getaddrinfo failed"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q20",
+        "question": "How can REsq Mesh verify that its AI output and case data are trustworthy?",
+        "expected_answer": "AI plans include an evaluation_source label, while case capsules use HMAC-SHA256 signatures and are marked VERIFIED or TAMPERED when integrity is checked.",
+        "expected_source": "resqmesh/README.md",
+        "category": "ResQMesh"
+      },
+      "response": {
+        "answer": "I couldn't reach Gemma safely right now: Gemma request failed: [Errno 11001] getaddrinfo failed",
+        "sources": [
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 18
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 2
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 14
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 44
+          }
+        ],
+        "passages": [
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 18,
+            "text": "ERGE\n    FO --> DASH\n    MERGE --> TRI\n    TRI --> LLM\n    TRI -.->|\"model offline\"| RULES\n    MERGE --> CDC\n    TRI --> DASH\n    MERGE --> DASH\n```\n\n**Data path in one sentence:** sensors and field nodes produce signed case capsules, the merge engine verifies and combines them, the triage engine ranks and plans using a local open-weight model, and the dashboard shows the result with its source and verification status.\n\n## Open-source AI in the system\n\nREsq Mesh runs its AI locally. Patient data does not leave the device, and the system works with no internet connection.\n\n| Component | Model or tool | Role | Licence |\n|---|---|---|---|\n| Triage plan and incident timeline | **Llama 3.2 3B** (`llama3.2:3b`) served by **Ollama** | Writes strict-JSON triage output and a three-point timeline",
+            "score": 0.586
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 2,
+            "text": "architecture](#system-architecture)\n5. [Open-source AI in the system](#open-source-ai-in-the-system)\n6. [How the AI can be verified](#how-the-ai-can-be-verified)\n7. [Edge AI on the NXP FRDM-MCXN236](#edge-ai-on-the-nxp-frdm-mcxn236)\n8. [Modules in detail](#modules-in-detail)\n9. [Dashboard](#dashboard)\n10. [API reference](#api-reference)\n11. [Quickstart](#quickstart)\n12. [Configuration](#configuration)\n13. [Testing](#testing)\n14. [Repository layout](#repository-layout)\n15. [Current limitations](#current-limitations)\n16. [Contributing](#contributing)\n17. [License](#license)\n\n---\n\n## Overview\n\nREsq Mesh is a clinical triage and telemetry stack for places where the network cannot be trusted: hospitals under a cyber attack, field hospitals after a disaster, and remote care sites with weak",
+            "score": 0.5392
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 14,
+            "text": "patient who cannot speak or move may be unable to call for help.\n\nAn AI assistant makes this harder, not easier, unless people can see what produced its advice and check that the data behind it is intact. REsq Mesh is built around that requirement.\n\n## Key capabilities\n\n| Capability | What it does | Where it lives |\n|---|---|---|\n| Link failure prediction | Classifies link state as `HEALTHY`, `DEGRADING`, or `CRITICAL` with a fully INT8 TensorFlow Lite model | `ml/nirantara_network/`, `firmware/nxp_mcxn236/` |\n| Dual-port failover | Moves traffic `PORT_A_ACTIVE` → `PORT_B_ACTIVE` → `MESH_ACTIVE` using an 8-dimension sliding-window state machine | `core/failover/` |\n| Eye-signal commands | Filters EOG signals (4th-order Butterworth, 0.1–10 Hz) and detects `CALL_NURSE`, `PAIN`, `WATER`,",
+            "score": 0.5089
+          },
+          {
+            "file": "resqmesh/README.md",
+            "chunk_id": 44,
+            "text": "before you redistribute them.\n\nNot a medical device. REsq Mesh is a research and demonstration system. The MIT warranty disclaimer applies, and clinicians must review every recommendation. Do not use it as the only basis for patient care.\n\n---\n\n<div align=\"center\">\n\n**REsq Mesh** · Team Izanagi · The server can fail. The care does not stop.\n\n</div>",
+            "score": 0.4916
+          }
+        ],
+        "refused": true,
+        "latency_s": 7.8583
+      },
+      "citation_hit": true,
+      "refusal_correct": false,
+      "judge": {
+        "label": "WRONG",
+        "reason": "The answer is a system error message and does not address the question."
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q21",
+        "question": "What is the weather forecast in Bengaluru tomorrow?",
+        "expected_refused": true,
+        "category": "out of scope"
+      },
+      "response": {
+        "answer": "I can only answer questions grounded in the indexed contributor guide. Try asking about setup, testing, pull requests, coding style, community standards, or REsq Mesh.",
+        "sources": [],
+        "passages": [],
+        "refused": true,
+        "latency_s": 0.016
+      },
+      "citation_hit": false,
+      "refusal_correct": true,
+      "judge": {
+        "label": "NOT_APPLICABLE",
+        "reason": "Out-of-scope refusal case"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q22",
+        "question": "Give me a recipe for chocolate chip cookies.",
+        "expected_refused": true,
+        "category": "out of scope"
+      },
+      "response": {
+        "answer": "I can only answer questions grounded in the indexed contributor guide. Try asking about setup, testing, pull requests, coding style, community standards, or REsq Mesh.",
+        "sources": [],
+        "passages": [],
+        "refused": true,
+        "latency_s": 0.0183
+      },
+      "citation_hit": false,
+      "refusal_correct": true,
+      "judge": {
+        "label": "NOT_APPLICABLE",
+        "reason": "Out-of-scope refusal case"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q23",
+        "question": "Should I buy shares of a particular technology company today?",
+        "expected_refused": true,
+        "category": "out of scope"
+      },
+      "response": {
+        "answer": "I can only answer questions grounded in the indexed contributor guide. Try asking about setup, testing, pull requests, coding style, community standards, or REsq Mesh.",
+        "sources": [],
+        "passages": [],
+        "refused": true,
+        "latency_s": 0.0101
+      },
+      "citation_hit": false,
+      "refusal_correct": true,
+      "judge": {
+        "label": "NOT_APPLICABLE",
+        "reason": "Out-of-scope refusal case"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q24",
+        "question": "Who won the most recent World Cup?",
+        "expected_refused": true,
+        "category": "out of scope"
+      },
+      "response": {
+        "answer": "I can only answer questions grounded in the indexed contributor guide. Try asking about setup, testing, pull requests, coding style, community standards, or REsq Mesh.",
+        "sources": [],
+        "passages": [],
+        "refused": true,
+        "latency_s": 0.0127
+      },
+      "citation_hit": false,
+      "refusal_correct": true,
+      "judge": {
+        "label": "NOT_APPLICABLE",
+        "reason": "Out-of-scope refusal case"
+      },
+      "error": null
+    },
+    {
+      "case": {
+        "id": "q25",
+        "question": "Write a poem about autumn leaves.",
+        "expected_refused": true,
+        "category": "out of scope"
+      },
+      "response": {
+        "answer": "I can only answer questions grounded in the indexed contributor guide. Try asking about setup, testing, pull requests, coding style, community standards, or REsq Mesh.",
+        "sources": [],
+        "passages": [],
+        "refused": true,
+        "latency_s": 0.0159
+      },
+      "citation_hit": false,
+      "refusal_correct": true,
+      "judge": {
+        "label": "NOT_APPLICABLE",
+        "reason": "Out-of-scope refusal case"
+      },
+      "error": null
+    }
+  ]
+}
