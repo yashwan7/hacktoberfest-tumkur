@@ -13,6 +13,6 @@ The default anchor is `chunk_size=800`, `overlap=120`, `top_k=4`, `hybrid=true`,
 | threshold=0.20 | threshold | 0.2 | n/a | n/a | 0.000 | 0.000 |
 | threshold=0.40 | threshold | 0.4 | n/a | n/a | 0.000 | 0.000 |
 
-Charts were not rendered: matplotlib is not installed in this environment. Re-run after installing matplotlib.
+Charts: `eval/results/accuracy_vs_chunk_size.png`, `eval/results/accuracy_vs_top_k.png`
 
 Raw data: [`experiments.json`](experiments.json)

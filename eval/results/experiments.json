@@ -31,7 +31,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 3.992000000008211e-08
+        "avg_latency_s": 3.312000000019189e-08
       },
       "rows": [
         {
@@ -47,7 +47,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 1.6600000000283055e-07
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -93,7 +93,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -116,7 +116,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -139,7 +139,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -162,7 +162,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -185,7 +185,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -208,7 +208,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -254,7 +254,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 1.25000000000125e-07
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -277,7 +277,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -323,7 +323,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -346,7 +346,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -369,7 +369,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -392,7 +392,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -415,7 +415,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -438,7 +438,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -461,7 +461,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -506,7 +506,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -572,7 +572,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -635,7 +635,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 4.0039999999602616e-08
+        "avg_latency_s": 2.8439999999879674e-08
       },
       "rows": [
         {
@@ -651,7 +651,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -720,7 +720,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -766,7 +766,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -789,7 +789,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -812,7 +812,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -881,7 +881,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -904,7 +904,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -927,7 +927,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -973,7 +973,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -996,7 +996,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1019,7 +1019,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1042,7 +1042,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1065,7 +1065,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1088,7 +1088,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1110,7 +1110,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1154,7 +1154,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1176,7 +1176,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1198,7 +1198,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1239,7 +1239,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 9.549999999999837e-07
+        "avg_latency_s": 3.171999999995734e-08
       },
       "rows": [
         {
@@ -1255,7 +1255,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1278,7 +1278,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1301,7 +1301,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1324,7 +1324,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1370,7 +1370,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1393,7 +1393,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1416,7 +1416,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1439,7 +1439,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1462,7 +1462,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1531,7 +1531,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1554,7 +1554,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1577,7 +1577,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 2.29169999999973e-05
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1623,7 +1623,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1646,7 +1646,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1669,7 +1669,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1692,7 +1692,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1714,7 +1714,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1758,7 +1758,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1802,7 +1802,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -1843,7 +1843,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 3.164000000013822e-08
+        "avg_latency_s": 3.1679999999700835e-08
       },
       "rows": [
         {
@@ -1859,7 +1859,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1882,7 +1882,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1905,7 +1905,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1951,7 +1951,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -1997,7 +1997,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2020,7 +2020,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2066,7 +2066,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2089,7 +2089,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2112,7 +2112,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2135,7 +2135,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2158,7 +2158,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2204,7 +2204,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2227,7 +2227,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2250,7 +2250,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2273,7 +2273,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2296,7 +2296,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2362,7 +2362,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -2384,7 +2384,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -2447,7 +2447,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 3.184000000031051e-08
+        "avg_latency_s": 3.500000000031256e-08
       },
       "rows": [
         {
@@ -2509,7 +2509,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2555,7 +2555,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2578,7 +2578,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2601,7 +2601,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2624,7 +2624,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2647,7 +2647,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2670,7 +2670,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2693,7 +2693,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2716,7 +2716,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2739,7 +2739,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2762,7 +2762,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2785,7 +2785,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2808,7 +2808,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2831,7 +2831,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2854,7 +2854,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2877,7 +2877,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2900,7 +2900,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -2922,7 +2922,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -2944,7 +2944,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -2966,7 +2966,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -2988,7 +2988,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -3010,7 +3010,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -3051,7 +3051,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 3.4960000000194834e-08
+        "avg_latency_s": 3.5079999999576563e-08
       },
       "rows": [
         {
@@ -3067,7 +3067,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3136,7 +3136,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3159,7 +3159,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3205,7 +3205,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3228,7 +3228,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3251,7 +3251,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3274,7 +3274,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3297,7 +3297,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3320,7 +3320,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3366,7 +3366,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3389,7 +3389,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3435,7 +3435,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3458,7 +3458,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3481,7 +3481,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3504,7 +3504,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3526,7 +3526,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -3570,7 +3570,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -3592,7 +3592,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -3614,7 +3614,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -3655,7 +3655,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 2.6599999999737946e-08
+        "avg_latency_s": 3.3200000000011e-08
       },
       "rows": [
         {
@@ -3694,7 +3694,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3740,7 +3740,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3763,7 +3763,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3809,7 +3809,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3855,7 +3855,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3878,7 +3878,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3901,7 +3901,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -3924,7 +3924,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4016,7 +4016,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4039,7 +4039,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4062,7 +4062,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4085,7 +4085,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4108,7 +4108,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4130,7 +4130,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.100000000270554e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4152,7 +4152,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4174,7 +4174,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4196,7 +4196,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4218,7 +4218,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4259,7 +4259,7 @@
         "citation_hit_rate": 0.0,
         "refusal_correct": 5,
         "refusal_accuracy": 1.0,
-        "avg_latency_s": 2.992000000007211e-08
+        "avg_latency_s": 7.340000000022328e-08
       },
       "rows": [
         {
@@ -4298,7 +4298,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4321,7 +4321,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4344,7 +4344,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4390,7 +4390,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4413,7 +4413,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4436,7 +4436,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4482,7 +4482,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4505,7 +4505,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4551,7 +4551,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 8.299999999794583e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4574,7 +4574,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.099999999923609e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4597,7 +4597,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 1.125000000001125e-06
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4643,7 +4643,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4666,7 +4666,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4689,7 +4689,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 0.0
+            "latency_s": 4.1999999998709736e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4712,7 +4712,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.100000000270554e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": false,
@@ -4756,7 +4756,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.200000000217918e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4778,7 +4778,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4800,7 +4800,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.099999999923609e-08
+            "latency_s": 0.0
           },
           "citation_hit": false,
           "refusal_correct": true,
@@ -4822,7 +4822,7 @@
             "sources": [],
             "passages": [],
             "refused": true,
-            "latency_s": 4.1999999998709736e-08
+            "latency_s": 4.200000000217918e-08
           },
           "citation_hit": false,
           "refusal_correct": true,
