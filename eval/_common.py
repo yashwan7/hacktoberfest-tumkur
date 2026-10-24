@@ -60,12 +60,9 @@ def citation_hit(expected_source: str | None, sources: Any) -> bool:
     if not expected_source:
         return False
     expected = normalized_source(expected_source)
-    expected_base = expected.rsplit("/", 1)[-1]
     for source in sources or []:
         actual = normalized_source(source)
         if actual == expected or actual.endswith("/" + expected):
-            return True
-        if actual.rsplit("/", 1)[-1] == expected_base:
             return True
     return False
 

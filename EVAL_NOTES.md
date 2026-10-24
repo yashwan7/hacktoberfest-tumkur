@@ -8,3 +8,15 @@
 - Expected source labels assume Laptop A will preserve these document identities when copying them into `data/`: `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `resqmesh/README.md`. The evaluator accepts normalized path suffixes and basenames to tolerate a different `data/` prefix.
 - The 20 in-scope answers are short, directly verifiable paraphrases. The five out-of-scope prompts intentionally do not have expected answers or sources; only refusal behavior is scored.
 - No API key is stored in this repository. Evaluation code reads `GOOGLE_API_KEY` from the environment (and optionally a local `.env` file that is not committed).
+
+## Live evaluation session — 2026-10-24
+
+- Followed the requested reset: previous local commits are retained on backup-eval only; live evaluation starts from origin/main and does not cherry-pick that branch. Repo-local identity is Yashwanth Gowda S N <yashwan7896@gmail.com>.
+- Loaded the ignored root .env with python-dotenv. The credential was accepted by the model-list API and a real 26B generation preflight. No credential is printed, embedded in source, or staged.
+- Application and corpus arrived at bc8590c; retrieval hardening arrived at 55a5823 before baseline execution. This laptop does not edit rag.py, app.py or data/.
+- Reviewed all 25 existing cases against the shipped data. The ground-truth facts match. Corrected only expected_source paths for Gradio to gradio/CONTRIBUTING.md and gradio/CODE_OF_CONDUCT.md; committed and pushed before live results. Questions and expected answers were not tuned.
+- Corrected evaluation citation matching to require the expected path or its full suffix, preventing gradio/README.md from being counted as a hit for resqmesh/README.md solely because both share a basename.
+- Both exact models gemma-4-26b-a4b-it and gemma-4-31b-it are listed by the authenticated API. No model substitution is assumed. A scratch observer records requested/actual generation model names, input hashes and package versions in each audit JSON without altering application files or returned values.
+- Important ablation limitation: use_rag=False removes retrieved passages but retains the application's instruction to answer only from supplied passages and refuse otherwise. It is an ablation of the implemented path, not a clean unrestricted pretrained-model baseline. A low no-RAG accuracy or lack of confident hallucinations must be interpreted with that confound.
+- Existing score_rows accuracy divides by successfully judged in-scope rows. Reports must show judged coverage; unavailable judgments are not evidence of correctness. Average latency is the application's returned latency_s, not judge time or index construction time.
+- CPU dependencies are installed locally for evaluation. No API calls are made by the stub; actual runs explicitly import production rag before invoking the existing evaluation CLI, so dependency errors cannot silently produce a stub benchmark.
