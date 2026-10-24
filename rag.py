@@ -12,10 +12,13 @@ from typing import Any
 
 import numpy as np
 from dotenv import load_dotenv
+from google.genai import types
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
 load_dotenv()
+
+MAX_OUTPUT_TOKENS = 512
 
 TOKEN_RE = re.compile(r"[A-Za-z0-9_][A-Za-z0-9_.-]*")
 STOPWORDS = {
@@ -194,7 +197,11 @@ def _generate(client, prompt: str, model: str) -> tuple[str, str]:
     last_error: Exception | None = None
     for attempt in range(3):
         try:
-            response = client.models.generate_content(model=selected, contents=prompt)
+            response = client.models.generate_content(
+                model=selected,
+                contents=prompt,
+                config=types.GenerateContentConfig(max_output_tokens=MAX_OUTPUT_TOKENS),
+            )
             text = getattr(response, "text", None)
             if text:
                 return text, selected

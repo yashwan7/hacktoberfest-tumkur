@@ -38,8 +38,12 @@ def _display_result(result: dict, heading: str = "Answer"):
 
 def respond(question, history, project, top_k, threshold):
     if not question or not question.strip():
-        return "", history or [], "Ask a question to search the guide.", [], []
+        yield "", history or [], "Ask a question to search the guide.", [], []
+        return
     clean_question = question.strip()
+    # Yield immediately so the panel visibly enters a loading state while the
+    # embedding lookup and Gemma request run.
+    yield "", history or [], "### Loading\n\n⏳ Retrieving passages and asking Gemma…", [], []
     result = answer(
         clean_question,
         get_project_index(project),
@@ -52,7 +56,7 @@ def respond(question, history, project, top_k, threshold):
         {"role": "user", "content": clean_question},
         {"role": "assistant", "content": result["answer"]},
     ]
-    return "", new_history, rendered, source_rows, passage_rows
+    yield "", new_history, rendered, source_rows, passage_rows
 
 
 def _find_passage(index, file_suffix: str, needle: str) -> dict:
@@ -155,4 +159,4 @@ Every supported answer shows its retrieved source passages; unrelated questions 
 if __name__ == "__main__":
     # Older Gradio clients can fail while introspecting newer FastAPI/Pydantic
     # schemas even when the local UI itself is healthy.
-    demo.launch(show_api=False)
+    demo.queue().launch(show_api=False)
