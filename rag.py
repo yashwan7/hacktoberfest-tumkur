@@ -24,6 +24,14 @@ STOPWORDS = {
     "the", "their", "there", "these", "this", "what", "when", "where", "which",
     "with", "would", "your", "you",
 }
+SCOPE_ANCHORS = {
+    "gradio", "contribute", "contributor", "contributors", "guide", "documentation",
+    "setup", "install", "python", "frontend", "backend", "test", "testing", "pytest",
+    "issue", "bug", "feature", "pull", "request", "pr", "review", "style", "format",
+    "code", "conduct", "community", "repository", "repo", "component", "app", "demo",
+    "resq", "mesh", "patient", "capsule", "triage", "offline", "hmac", "ollama", "model",
+    "docs", "documentation", "start", "run", "share",
+}
 
 
 @dataclass(frozen=True)
@@ -48,6 +56,15 @@ class Index:
 
 def _tokens(text: str) -> list[str]:
     return [token.lower() for token in TOKEN_RE.findall(text)]
+
+
+def _normalize_vectors(vectors: np.ndarray) -> np.ndarray:
+    # Normalize in float64: a malformed/overflowing encoder output should not
+    # poison the dot-product retrieval path with float32 overflow warnings.
+    vectors = np.asarray(vectors, dtype=np.float64)
+    vectors = np.nan_to_num(vectors, nan=0.0, posinf=0.0, neginf=0.0)
+    norms = np.linalg.norm(vectors, axis=-1, keepdims=True)
+    return (vectors / np.maximum(norms, 1e-12)).astype(np.float32)
 
 
 def _chunk_text(text: str, chunk_size: int, overlap: int) -> list[str]:
@@ -90,10 +107,10 @@ def build_index(docs_dir="data", chunk_size=800, overlap=120,
     if not chunks:
         raise ValueError(f"No markdown documents found under {root}")
     encoder = SentenceTransformer(embed_model, device="cpu")
-    embeddings = encoder.encode(
+    embeddings = _normalize_vectors(encoder.encode(
         [chunk.text for chunk in chunks], normalize_embeddings=True,
         convert_to_numpy=True, show_progress_bar=False,
-    )
+    ))
     tokenized = [_tokens(chunk.text) for chunk in chunks]
     return Index(
         str(root), chunk_size, overlap, embed_model, chunks,
@@ -105,11 +122,14 @@ def build_index(docs_dir="data", chunk_size=800, overlap=120,
 def _retrieve(question: str, index: Index, top_k: int, threshold: float,
               hybrid: bool) -> list[dict[str, Any]]:
     query_tokens = _tokens(question)
-    query_embedding = index.encoder.encode(
+    query_embedding = _normalize_vectors(index.encoder.encode(
         [question], normalize_embeddings=True, convert_to_numpy=True,
         show_progress_bar=False,
-    )[0]
-    dense = np.clip(index.embeddings @ query_embedding, 0.0, 1.0)
+    ))[0]
+    # `einsum` avoids a sporadic macOS Accelerate warning from NumPy matmul on
+    # this small matrix while remaining effectively instantaneous here.
+    dense = np.clip(np.einsum("ij,j->i", index.embeddings.astype(np.float64),
+                              query_embedding.astype(np.float64), optimize=False), 0.0, 1.0)
     lexical = np.asarray(index.bm25.get_scores(query_tokens), dtype=float)
     if lexical.size and lexical.max() > 0:
         lexical = lexical / lexical.max()
@@ -129,6 +149,11 @@ def _retrieve(question: str, index: Index, top_k: int, threshold: float,
 def _has_corpus_overlap(question: str, index: Index) -> bool:
     query = {token for token in _tokens(question) if len(token) > 2 and token not in STOPWORDS}
     return bool(query & index.vocabulary)
+
+
+def _looks_in_scope(question: str) -> bool:
+    query = {token for token in _tokens(question) if len(token) > 2}
+    return bool(query & SCOPE_ANCHORS)
 
 
 def _client():
@@ -155,7 +180,7 @@ def _closest_gemma(client, requested: str) -> str | None:
         names = _model_names(client)
     except Exception:
         return None
-    gemma = [name for name in names if "gemma" in name.lower() and "generatecontent" in " ".join([]).lower() or "gemma" in name.lower()]
+    gemma = [name for name in names if "gemma" in name.lower()]
     if not gemma:
         return None
     preferred = [name for name in gemma if "4" in name and ("it" in name or "instruct" in name)]
@@ -207,7 +232,9 @@ def answer(question, index, top_k=4, threshold=0.30, history=None,
         hits = []
     else:
         hits = _retrieve(question, index, top_k, threshold, hybrid)
-    refused = use_rag and (not hits or not _has_corpus_overlap(question, index))
+    refused = use_rag and (
+        not hits or not _has_corpus_overlap(question, index) or not _looks_in_scope(question)
+    )
     if refused:
         return {
             "answer": "I can only answer questions grounded in the indexed contributor guide. Try asking about setup, testing, pull requests, coding style, community standards, or REsq Mesh.",
