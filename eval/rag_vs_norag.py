@@ -49,7 +49,7 @@ def main() -> None:
         if case.get("expected_refused"):
             continue
         no_rag = no_rag_rows[case["id"]]
-        if no_rag["judge"].get("label") in {"WRONG", "PARTIAL"}:
+        if no_rag["judge"].get("label") == "WRONG" and not no_rag["response"].get("refused"):
             hallucinations.append({
                 "id": case["id"], "question": case["question"],
                 "answer": no_rag["response"].get("answer", ""),
@@ -69,18 +69,20 @@ def main() -> None:
         "",
         "Both modes were run over the same test set with `top_k=4`, `threshold=0.30`, and the same Gemma model configuration. The no-RAG mode is expected to answer from the model without retrieved passages; this report does not treat that mode as a baseline that can cite documents.",
         "",
+        "Limitation: disabling retrieval retains the application instruction to answer only from passages and refuse otherwise. Refusals are failures on in-scope cases, not hallucinations. This is an implemented-path ablation, not an unrestricted pretrained-model baseline.",
+        "",
         markdown_table(by_mode["rag"]["summary"], title="With RAG"),
         "",
         markdown_table(by_mode["no_rag"]["summary"], title="Without RAG"),
         "",
-        "## Confidently wrong no-RAG answers",
+        "## Candidate hallucinations: non-refused no-RAG answers judged WRONG",
         "",
     ]
     if hallucinations:
         for item in hallucinations:
             lines.extend([f"- **{item['id']} — {item['question']}**: {item['answer']} _(judge: {item['judge'].get('label')}; RAG: {item['rag_label']})_"])
     else:
-        lines.append("No judged hallucination examples are available in this run. This is expected when the Gemma judge or production rag.py is unavailable; it is not evidence that no hallucinations exist.")
+        lines.append("No non-refused no-RAG answers judged WRONG were observed. Inspect judge coverage before interpreting this result. The application retains its evidence-only refusal prompt even with retrieval disabled, so this is not an unrestricted model baseline.")
     lines.extend(["", "## Three side-by-side answers", "", "| Question | With RAG | Without RAG |", "|---|---|---|"])
     for case in examples:
         rag = rag_rows[case["id"]]["response"]

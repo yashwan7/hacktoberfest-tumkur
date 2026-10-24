@@ -30,10 +30,12 @@ def classify(row: dict[str, Any]) -> str | None:
         return "bad refusal threshold" if not row.get("refusal_correct") else None
     if label not in {"WRONG", "PARTIAL"}:
         return None
+    if response.get("refused"):
+        return "bad refusal threshold"
     expected_source = str(case.get("expected_source", "")).lower()
     sources = [str(source.get("file", source)).lower() if isinstance(source, dict) else str(source).lower()
                for source in response.get("sources", [])]
-    source_hit = any(source.endswith(expected_source) or source.rsplit("/", 1)[-1] == expected_source.rsplit("/", 1)[-1]
+    source_hit = any(source == expected_source or source.endswith("/" + expected_source)
                      for source in sources)
     if not source_hit:
         return "retrieval miss"
@@ -90,7 +92,7 @@ No baseline evaluation JSON exists yet. Run `python eval/run_eval.py --run-name 
     if not examples:
         lines.append("No judged failures were present in this run. This is only meaningful when the run has judged rows; otherwise check the judge backend and run metadata.")
     else:
-        for row, category in examples[:12]:
+        for row, category in examples:
             lines.append(f"- **{row['case']['id']} — {category} ({row['judge'].get('label')})**: {row['case']['question']} — {row['judge'].get('reason', '')}")
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))

@@ -52,8 +52,8 @@ def write_charts(results: list[dict[str, Any]], chart_dir: Path) -> str:
     ]
     made = []
     for factor, label, filename in chart_specs:
-        points = [(row["factor_value"], row["summary"]["accuracy"])
-                  for row in results if row["factor"] == factor and row["summary"]["accuracy"] is not None]
+        points = [(row["config"][factor], row["summary"]["accuracy"])
+                  for row in results if row["factor"] in (factor, "default") and row["summary"]["accuracy"] is not None]
         fig, ax = plt.subplots(figsize=(6, 4))
         if points:
             points.sort(key=lambda item: item[0])
