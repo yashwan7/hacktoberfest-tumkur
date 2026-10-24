@@ -19,8 +19,8 @@ FIXES = {
     "judge unavailable": "Retry grading the same saved answer when the judge recovers and always show judged coverage; do not omit failures from the denominator silently.",
     "retrieval miss": "Inspect query rewriting and hybrid retrieval; add source-aware lexical signals and tune the threshold using held-out questions.",
     "chunk split": "Increase overlap or add structure-aware/heading-aware chunking so the evidence needed for one answer remains in a retrievable chunk.",
-    "wrong synthesis": "Tighten the grounded-answer prompt, require evidence-backed claims, and expose the retrieved passages to the judge/UI.",
-    "bad refusal threshold": "Calibrate refusal against out-of-scope and borderline questions; raise the refusal threshold when unsupported answers are confident.",
+    "wrong synthesis": "Extract final non-thought text, allow a sufficient output budget, validate JSON and reject SDK dumps/truncated output; then verify each claim against passages.",
+    "bad refusal threshold": "Calibrate false and missed refusals on a separate holdout. The no-RAG evidence-only prompt requires a separate control; threshold tuning cannot fix that confound.",
 }
 
 
@@ -121,6 +121,7 @@ No baseline evaluation JSON exists yet. Run `python eval/run_eval.py --run-name 
         lines.append(f"| {name} | {len(entries)} | {sum(classify(row) is not None for row in entries)} |")
     lines.extend(["", "## All classified failures", ""])
     lines.append("Refusal-policy labels in no-RAG include its retained evidence-only prompt, not just numeric thresholds. Service failures require connectivity/timeouts fixes. Raw SDK dumps and truncated JSON are response-extraction/synthesis failures; validate final text and JSON rather than returning SDK repr strings.")
+    lines.append("")
     examples = [(row, category) for row, category in classified if category]
     if not examples:
         lines.append("No judged failures were present in this run. This is only meaningful when the run has judged rows; otherwise check the judge backend and run metadata.")

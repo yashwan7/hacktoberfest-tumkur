@@ -89,7 +89,10 @@ def main() -> None:
         rag = rag_rows[case["id"]]["response"]
         no_rag = no_rag_rows[case["id"]]["response"]
         def compact(response: dict[str, Any]) -> str:
-            answer = str(response.get("answer", "")).replace("|", "\\|").replace("\n", " ")
+            original = str(response.get("answer", ""))
+            answer = "[SDK-response object returned instead of final answer; MAX_TOKENS]" if original.startswith("sdk_http_response=") else original.replace("|", "\\|").replace("\n", " ")
+            if len(answer) > 700:
+                answer = answer[:700] + "... [display shortened; full response in raw JSON]"
             sources = ", ".join(str(source.get("file", source)) if isinstance(source, dict) else str(source)
                                   for source in response.get("sources", [])) or "—"
             return f"{answer} **Sources:** {sources}"

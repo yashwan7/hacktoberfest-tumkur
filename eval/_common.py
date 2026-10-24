@@ -17,37 +17,28 @@ TEST_SET = ROOT / "eval" / "test_set.json"
 
 
 def load_dotenv_if_present() -> None:
-    """Load simple KEY=VALUE entries without requiring python-dotenv."""
-    env_file = ROOT / ".env"
-    if not env_file.exists():
-        return
-    for raw_line in env_file.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        key = key.strip()
-        value = value.strip().strip("\"'")
-        os.environ.setdefault(key, value)
+    """Load the ignored repository-local credential file with python-dotenv."""
+    from dotenv import load_dotenv
+    load_dotenv(ROOT / ".env")
 
 
 def load_test_set(path: Path = TEST_SET) -> list[dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_rag() -> tuple[Any, str]:
-    """Return the production module when available, otherwise the local stub."""
+def load_rag(*, allow_stub=False) -> tuple[Any, str]:
+    """Production runs fail closed; stub use must be explicitly requested."""
     if str(ROOT) not in sys.path:
         sys.path.insert(0, str(ROOT))
-    try:
-        module = importlib.import_module("rag")
-        if hasattr(module, "build_index") and hasattr(module, "answer"):
-            return module, "rag"
-    except Exception:
-        pass
-    from eval import stub_rag
-
-    return stub_rag, "eval.stub_rag"
+    if allow_stub:
+        from eval import stub_rag
+        return stub_rag, "eval.stub_rag"
+    module = importlib.import_module("rag")
+    if getattr(module, "IS_EVAL_STUB", False):
+        raise RuntimeError("Stub prohibited in production evaluation")
+    if not all(hasattr(module, name) for name in ("build_index", "answer")):
+        raise RuntimeError("Production rag interface is incomplete")
+    return module, "rag"
 
 
 def normalized_source(value: Any) -> str:

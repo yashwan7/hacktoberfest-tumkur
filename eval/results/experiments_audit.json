@@ -1,0 +1,877 @@
+{
+  "mode": "experiments",
+  "cli": "experiments.py",
+  "args": [
+    "--sleep",
+    "2",
+    "--anchor-from-ablation",
+    "eval/results/rag_vs_norag.json"
+  ],
+  "started_at": "2026-10-24T09:05:36.963702+00:00",
+  "input_sha256": {
+    "rag.py": "a725f425f45bd5ad27a08a3e9677ea6e1ffc830d0bf57e5be55b8d23fb042b08",
+    "app.py": "e09aee7aaa9ad5319b43ef0450f8b3482a9bf0ebdc0843b24fd9bc631d69df7c",
+    "eval/test_set.json": "c57513a48efe02edee3d79840d7d45147b4b60b8165703e1d6354b6d0f1f177e",
+    "data/gradio/CODE_OF_CONDUCT.md": "9ab8d35f165f26c74b461ab8410f744fd637527962541ce6b4d4d3a17ea9d23b",
+    "data/gradio/CONTRIBUTING.md": "b602ee381cf3d040b0c02b8700de65331f7bcabc05ea0fea6735db6da566eb66",
+    "data/gradio/guides/chatbot-fast.md": "30b8cd61bf57e2388188063e65cc1461aa0019e08d4829c84a9d3344dc86ac0a",
+    "data/gradio/guides/quickstart.md": "0236ee8f396d0b186edcf50c5ad15dd7a4e13dabfc731f28b561f65d993ada2a",
+    "data/gradio/guides/sharing-your-app.md": "9f1c8cf410d89553e1e330ebb07f5c14fed8713893e172772b3f9353d517bbfa",
+    "data/gradio/README.md": "0fdca11ad15d0c84a43ba0cc2d66d21b38f713fd4ae73f51245316ce234976a4",
+    "data/gradio/style.md": "4171805601575d0232535c270b1ded07b781479729ef10b56ba387883564eccc",
+    "data/resqmesh/README.md": "3663d9ca2740f023717e0b9a1920045150c51fc34c85c44ff2bc4ad3ca4bfbbf"
+  },
+  "packages": {
+    "google-genai": "2.33.0",
+    "sentence-transformers": "6.2.0",
+    "torch": "2.9.1+cpu",
+    "numpy": "2.5.3",
+    "rank-bm25": "0.2.2",
+    "transformers": "5.20.2"
+  },
+  "generation_calls": [
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.418498099999852
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 14.032915399999183
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.926256400000057
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.045239600000059
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.964593999999124
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.853071399998953
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.403027800000928
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.021688500000892
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.28815090000171
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.019093100001555
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.454936899999666
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.677772099999856
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.6703892000005
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.606324200000017
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.036283900000853
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.915156700000807
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.311050799999066
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.983963900000163
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.722441599999001
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.032553000000917
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.185601199998928
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.605518899999879
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.072533799999292
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.953094800001054
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.982937099999617
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 13.291033400000742
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.895869500000117
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.831582400000116
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.247383399999308
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.867165300000124
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.08717980000074
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.62449000000015
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.182587400000557
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 10.680630999999266
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.022720499999195
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.627827799999068
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.805503800000224
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.983138199999303
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.819561399999657
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.970892400000594
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.795673300000999
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 10.15896579999935
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 10.573995499999
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.911700000000565
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.948259200000393
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.885425899999973
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.251694399999906
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.012311000000409
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.975022300001001
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.198836399998982
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.244797100000142
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.182653399999253
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.21001520000027
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.54045049999877
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.70236610000029
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.223462700001619
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.094598499999847
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.08985340000072
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.134524099999908
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.896694600000046
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.05940229999942
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 9.116695900000195
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.249186499999269
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.72240089999832
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.84295369999927
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.238898300000074
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.883344500000021
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.758908600000723
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.574077799999941
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.90892039999926
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 13.56660010000087
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.68011529999967
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.219580700000733
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.805271000001085
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.999130699998204
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.994652699999278
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.217825300000186
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.182064500000706
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.469085999999152
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.253809199999523
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.897554500001206
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 10.98602270000083
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.542651199999455
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.753088100000241
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.812726599999223
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.06322739999996
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.953704199999265
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.074091700000281
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.809791400000904
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.109473900000012
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.865927500000907
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 9.844072500000038
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.431996600000275
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 9.99834760000158
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.375288799999907
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.756200000001627
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.009283800000048
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.309398299999884
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.871966700000485
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.296973200000139
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.01838510000016
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.440043599999626
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.66384779999862
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.72756020000088
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.863436300000103
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.05802599999879
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.971412999999302
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.126210300000821
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.061325900000156
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.707571000000826
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.71070409999993
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.53619660000004
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.758562699998947
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 60.723350800000844
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.351959600000555
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.197601400001076
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.097459399999934
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.77313680000043
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.39304169999923
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.793090199998915
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.160394700000325
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.490172200001325
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.86748230000012
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.943691200000103
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 13.060489499999676
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.18836360000023
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.167576499999996
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.735364600001049
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.739618800000244
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.13838460000079
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.803454700000657
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.676604599999337
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 6.954176799999914
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 10.072808900000382
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.30443970000124
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.385842699999557
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.789204500000778
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.042410699999891
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 12.185720299999957
+    },
+    {
+      "requested_model": "gemma-4-26b-a4b-it",
+      "actual_model": "gemma-4-26b-a4b-it",
+      "status": "SUCCESS",
+      "wall_latency_s": 11.741015100000368
+    }
+  ],
+  "status": "FINISHED",
+  "finished_at": "2026-10-24T09:53:24.282424+00:00",
+  "application_and_data_unchanged": true
+}
