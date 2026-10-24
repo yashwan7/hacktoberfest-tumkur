@@ -36,23 +36,34 @@ def _display_result(result: dict, heading: str = "Answer"):
     return rendered, source_rows, passage_rows
 
 
+def _completed_history(history):
+    """Keep only completed message turns for the next follow-up request."""
+    return [
+        item for item in (history or [])
+        if isinstance(item, dict)
+        and item.get("role") in {"user", "assistant"}
+        and str(item.get("content", "")).strip()
+    ]
+
+
 def respond(question, history, project, top_k, threshold):
+    prior_history = _completed_history(history)
     if not question or not question.strip():
-        yield "", history or [], "Ask a question to search the guide.", [], []
+        yield "", prior_history, "Ask a question to search the guide.", [], []
         return
     clean_question = question.strip()
     # Yield immediately so the panel visibly enters a loading state while the
     # embedding lookup and Gemma request run.
-    yield "", history or [], "### Loading\n\n⏳ Retrieving passages and asking Gemma…", [], []
+    yield "", prior_history, "### Loading\n\n⏳ Retrieving passages and asking Gemma…", [], []
     result = answer(
         clean_question,
         get_project_index(project),
         top_k=int(top_k),
         threshold=float(threshold),
-        history=history or [],
+        history=prior_history,
     )
     rendered, source_rows, passage_rows = _display_result(result)
-    new_history = list(history or []) + [
+    new_history = prior_history + [
         {"role": "user", "content": clean_question},
         {"role": "assistant", "content": result["answer"]},
     ]
